@@ -2,26 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+
+    /* Primary Palette */
+    --primary-200: #e0f2f1;
+    --primary-500: #26a69a;
+    --primary-800: #004d40;
+
+    /* Secondary Palette */
+    --secondary-200: #ffe082;
+    --secondary-500: #ffc107;
+    --secondary-800: #ff8f00;
+
+    /* Accent Palette */
+    --accent-200: #d1c4e9;
+    --accent-500: #7e57c2;
+    --accent-800: #512da8;
+
+    /* Section Background */
+    --section-bg: #f5f5f5;
+
+    --radius: 0.5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark {
+      --background: #121212;
+      --foreground: #ffffff;
+
+      /* Dark Mode Primary Palette */
+      --primary-200: #334155;
+      --primary-500: #7b92b3;
+      --primary-800: #e2e8f0;
+
+      /* Dark Mode Secondary Palette */
+      --secondary-200: #523621;
+      --secondary-500: #b37664;
+      --secondary-800: #ffbeb3;
+
+      /* Dark Mode Accent Palette */
+      --accent-200: #3c2c6a;
+      --accent-500: #854dcf;
+      --accent-800: #d0b4f9;
+
+      /* Dark Mode Section Background */
+      --section-bg: #f5f5f5;
+    }
   }
 }
