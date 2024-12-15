@@ -2,12 +2,12 @@ import React from 'react'
 import { Button } from './ui/button'
 
 type Props = {
-  text: string
+  children: React.ReactNode
 }
 
-function CallToAction({text}: Props) {
+function CallToAction({children}: Props) {
   return (
-    <Button className='text-md bg-primary font-bold w-[128px] dark:bg-primary'>{text}</Button>
+    <Button className='text-md font-bold w-[80px] md:w-[128px] bg-primary dark:bg-primary hover:bg-accent dark:hover:bg-accent text-foreground-light dark:text-foreground-light'>{children}</Button>
   )
 }
 

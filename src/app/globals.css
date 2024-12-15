@@ -14,52 +14,42 @@ body {
 
 @layer base {
   :root {
-    --background: #f8f5fc;
-    --foreground: #1c1333;
+    --background: #d8fffc;
+    --foreground: #101010;
+    --foreground-light: #f8f5fc;
 
     /* Primary Palette */
-    --primary-200: #d9c9f0;
-    --primary-500: #845ec2;
-    --primary-800: #4c2f8e;
+    --primary-500: #0699ab; /* Kept */
 
     /* Secondary Palette */
-    --secondary-200: #ecd5f5;
-    --secondary-500: #bb7fd9;
-    --secondary-800: #7d4c9e;
+    --secondary-500: #7ed159; /* Kept */
 
     /* Accent Palette */
-    --accent-200: #f1e3fc;
-    --accent-500: #ab86e5;
-    --accent-800: #724bb2;
+    --accent-500: #6cc3cf;
 
     /* Section Background */
-    --section-bg: #ffffff;
+    --section-bg: #f5feff;
 
     --radius: 0.5rem;
   }
 
   @media (prefers-color-scheme: dark) {
-    .dark {
-      --background: #1c1333;
-      --foreground: #e8e3f7;
+    :root {
+      --background: #001517; /* Darker background */
+      --foreground: #e6e6e6;
+      --foreground-light: #f8f5fc;
 
       /* Dark Mode Primary Palette */
-      --primary-200: #644ca4;
-      --primary-500: #845ec2;
-      --primary-800: #bea4e7;
+      --primary-500: #0699ab; /* Kept */
 
       /* Dark Mode Secondary Palette */
-      --secondary-200: #754e8f;
-      --secondary-500: #9d6ab8;
-      --secondary-800: #d6bae8;
+      --secondary-500: #7ed159; /* Kept */
 
       /* Dark Mode Accent Palette */
-      --accent-200: #553282;
-      --accent-500: #7a4ca8;
-      --accent-800: #c0a4e5;
+      --accent-500: #6cc3cf;
 
       /* Dark Mode Section Background */
-      --section-bg: #2a213b;
+      --section-bg: #01292c; /* Darker section background */
     }
   }
 }

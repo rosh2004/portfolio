@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
 
 const config: Config = {
-    darkMode: "class",
+    darkMode: "media",
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,24 +12,21 @@ const config: Config = {
   	extend: {
   		colors: {
   			background: 'var(--background)',
-  			foreground: 'var(--foreground)',
+  			foreground: {
+          DEFAULT: 'var(--foreground)',
+          light: 'var(--foreground-light)',
+        },
 				primary: {
 					DEFAULT: "var(--primary-500)",
-          200: "var(--primary-200)",
           500: "var(--primary-500)",
-          800: "var(--primary-800)",
         },
         secondary: {
 					DEFAULT: "var(--secondary-500)",
-          200: "var(--secondary-200)",
           500: "var(--secondary-500)",
-          800: "var(--secondary-800)",
         },
         accent: {
 					DEFAULT: "var(--accent-500)",
-          200: "var(--accent-200)",
           500: "var(--accent-500)",
-          800: "var(--accent-800)",
         },
         sectionBg: {
           DEFAULT: "var(--section-bg)",

@@ -8,7 +8,7 @@ function MainLogo(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      <rect width="191" height="52" rx="20" className="fill-primary" />
+      {/* <rect width="191" height="52" rx="20" className="fill-primary" /> */}
       <path
         className="fill-foreground"
         d="M156.921 46.824L162.921 6H169.713L163.713 46.824H156.921ZM160.737 43.848H160.713L166.041 8.856H166.065L160.737 43.848ZM168.85 42.048V33.408L177.539 27.816V27.864L168.85 22.152V13.536L183.299 23.688V31.992L168.85 42.048ZM171.874 35.808L180.802 29.76V26.064L171.874 19.944V19.92L180.802 26.064V29.76L171.874 35.832V35.808Z"
