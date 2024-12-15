@@ -40,7 +40,11 @@ const config: Config = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
-  	}
+  	},
+    fontFamily: {
+      inter: ["var(--font-inter)", "sans-serif"],
+      roboto: ["var(--font-roboto)", "sans-serif"],
+    },
   },
   plugins: [tailwindcssAnimate],
 };

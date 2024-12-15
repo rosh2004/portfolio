@@ -6,9 +6,9 @@ import { Toggle } from "./ui/toggle"
 
 function Navbar() {
   return (
-    <header className="bg-foreground min-h-[65px]">
+    <header className="bg-background min-h-[65px]">
       <nav className="flex justify-between items-center py-3 mx-auto px-4">
-        <Toggle  className="sm:hidden mr-[60px]">
+        <Toggle  className="sm:hidden">
           <GiHamburgerMenu  />
         </Toggle >
         <div className="flex items-center">

@@ -7,7 +7,7 @@ type Props = {
 
 function CallToAction({text}: Props) {
   return (
-    <Button className='text-md bg-prim font-bold w-[128px]'>{text}</Button>
+    <Button className='text-md bg-primary font-bold w-[128px] dark:bg-primary'>{text}</Button>
   )
 }
 
