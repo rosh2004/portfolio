@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
-import { FaX } from 'react-icons/fa6';
+import { FaXTwitter } from 'react-icons/fa6';
 
 type Props = {
   type?: 'phone' | 'email' | 'github' | 'linkedin' | 'twitter';
@@ -13,23 +13,23 @@ function SocialHandle({type}: Props) {
   const iconClass = 'w-full h-full';
   switch (type) {
     case 'linkedin':
-      href = 'https://www.linkedin.com/in/rosh-siddiqui/';
+      href = process.env.LINKEDIN_HREF ?? '/';
       Icon = <FaLinkedin className={iconClass}/>;      ;
       break;
     case 'twitter':
-      href = 'https://x.com/roshaandev';
-      Icon =<FaX className={iconClass}/>;
+      href = process.env.TWITTER_HREF ?? '/';
+      Icon =<FaXTwitter className={iconClass}/>;
       break;
     case 'github':
-      href = 'https://github.com/rosh2004/';
+      href = process.env.GITHUB_HREF ?? '/';
       Icon =<FaGithub className={iconClass}/>;
       break;
     case 'phone':
-      href = 'tel:+923343366194';
+      href = process.env.PHONE_HREF ?? '/';
       Icon =<FaPhone className={iconClass}/>;
       break;
     case 'email':
-      href = 'mailto:roshaan20043@gmail.com';
+      href = process.env.EMAIL_HREF ?? '/';
       Icon =<FaEnvelope className={iconClass}/>;
       break;
     default:
