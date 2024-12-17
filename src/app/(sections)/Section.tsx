@@ -7,7 +7,7 @@ function Section({children, alt}: Props) {
   const sectionColor = alt ? ' ' : 'bg-sectionBg dark:bg-sectionBg'
   return (
     <section className={`${sectionColor}`}>
-      <div className="container mx-auto px-2 py-10 md:px-10">
+      <div className="container mx-auto px-10 py-10 md:px-10">
         {children}
       </div>
     </section>

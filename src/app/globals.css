@@ -14,7 +14,7 @@ body {
 
 @layer base {
   :root {
-    --background: #d8fffc;
+    --background: #dffcf9;
     --foreground: #101010;
     --foreground-light: #f8f5fc;
 
@@ -28,7 +28,7 @@ body {
     --accent-500: #6cc3cf;
 
     /* Section Background */
-    --section-bg: #f5feff;
+    --section-bg: #effcfd;
 
     --radius: 0.5rem;
   }
@@ -38,15 +38,6 @@ body {
       --background: #001517; /* Darker background */
       --foreground: #e6e6e6;
       --foreground-light: #f8f5fc;
-
-      /* Dark Mode Primary Palette */
-      --primary-500: #0699ab; /* Kept */
-
-      /* Dark Mode Secondary Palette */
-      --secondary-500: #7ed159; /* Kept */
-
-      /* Dark Mode Accent Palette */
-      --accent-500: #6cc3cf;
 
       /* Dark Mode Section Background */
       --section-bg: #01292c; /* Darker section background */
