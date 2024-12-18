@@ -26,9 +26,9 @@ function ProjectsCarousel({projectList}: Props) {
                 </Link>
               </div>
             </CardContent>
-            <CardHeader className="pt-0 h-36 ">
+            <CardHeader className="pt-0 h-44 flex flex-col ">
               <CardTitle className="text-lg text-foreground-light dark:text-foreground-light">{project.title}</CardTitle>
-              <CardDescription className="text-sm text-foreground-light dark:text-foreground-light ">{project.description}</CardDescription>
+              <CardDescription className="flex-grow text-sm text-foreground-light dark:text-foreground-light overflow-ellipsis ...">{project.description}</CardDescription>
             </CardHeader>
           </Card>
         </div>
