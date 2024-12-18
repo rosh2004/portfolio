@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "./ui/button";
 import { FaCode, FaEye } from "react-icons/fa";
 import Link from "next/link";
+import { Project } from "../../types";
 
 type Props = {
   projectList: Project[];

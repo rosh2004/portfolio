@@ -1,5 +1,3 @@
-import { Card } from "../ui/card"
-
 type Props = {
   from: string;
   to: string;

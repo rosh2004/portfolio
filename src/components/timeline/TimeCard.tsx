@@ -2,7 +2,6 @@ import Link from "next/link"
 import { FaLinkedin } from "react-icons/fa"
 import { HiBuildingOffice } from "react-icons/hi2"
 import { TimelineStep } from "../../../types"
-import IconBar from "./IconBar"
 import TimeSubStep from "./TimeSubStep"
 
 type Props = {

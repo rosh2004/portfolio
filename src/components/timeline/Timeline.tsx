@@ -1,8 +1,5 @@
-import { FaAngular, FaLinkedin } from "react-icons/fa";
 import TimelineStepBullet from "./TimelineStepBullet";
 import TimePost from "./TimePost";
-import Link from "next/link";
-import { HiBuildingOffice } from "react-icons/hi2";
 import { TimelineSteps } from "../../../types";
 import React from "react";
 import TimeCard from "./TimeCard";

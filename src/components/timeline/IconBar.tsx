@@ -1,5 +1,4 @@
 import { IconType } from "react-icons"
-import { TimeSubStep } from "../../../types"
 
 type Props = {
   icons: IconType[]
