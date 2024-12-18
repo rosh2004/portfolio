@@ -17,16 +17,13 @@ const config: Config = {
           light: 'var(--foreground-light)',
         },
 				primary: {
-					DEFAULT: "var(--primary-500)",
-          500: "var(--primary-500)",
+					DEFAULT: "var(--primary)",
         },
         secondary: {
-					DEFAULT: "var(--secondary-500)",
-          500: "var(--secondary-500)",
+					DEFAULT: "var(--secondary)",
         },
         accent: {
-					DEFAULT: "var(--accent-500)",
-          500: "var(--accent-500)",
+					DEFAULT: "var(--accent)",
         },
         sectionBg: {
           DEFAULT: "var(--section-bg)",

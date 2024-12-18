@@ -1,7 +1,7 @@
 
 import ProjectsCarousel from "@/components/ProjectsCarousel"
 import SectionHeading from "@/components/ui/SectionHeading"
-import { ProjectList } from "../utils/project-data"
+import { ProjectList } from "../lib/project-data"
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa";
 

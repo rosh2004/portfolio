@@ -1,3 +1,5 @@
+import { Project } from "../../../types";
+
 export const ProjectList: Project[] = [
   {
     title: "Personal Portfolio Website",

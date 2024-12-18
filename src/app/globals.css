@@ -19,13 +19,13 @@ body {
     --foreground-light: #f8f5fc;
 
     /* Primary Palette */
-    --primary-500: #0699ab; /* Kept */
+    --primary: #0699ab; /* Kept */
 
     /* Secondary Palette */
-    --secondary-500: #7ed159; /* Kept */
+    --secondary: #7ed159; /* Kept */
 
     /* Accent Palette */
-    --accent-500: #6cc3cf;
+    --accent: #6cc3cf;
 
     /* Section Background */
     --section-bg: #effcfd;
