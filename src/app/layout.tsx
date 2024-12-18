@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react"
 import { Inter, Roboto } from "next/font/google";
 import Navbar from "../components/Navbar";
 
