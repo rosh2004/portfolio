@@ -3,9 +3,8 @@ import SectionHeading from "@/components/ui/SectionHeading"
 import { TimelineSteps } from "../../../types"
 import { WORK_EXPERIENCE_LIST } from "../lib/work-experience"
 
-type Props = {}
 
-function WorkExperienceSection({}: Props) {
+function WorkExperienceSection() {
   const workExperienceList: TimelineSteps = WORK_EXPERIENCE_LIST;
   return (
     <div>

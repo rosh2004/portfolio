@@ -1,7 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import Image from "next/image";
-import { Button } from "./ui/button";
 import { FaCode, FaEye } from "react-icons/fa";
 import Link from "next/link";
 import { Project } from "../../types";

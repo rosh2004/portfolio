@@ -2,7 +2,6 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { TimelineSteps } from "../../../types";
 import { SiJest, SiSupabase, SiTypescript } from "react-icons/si";
 import { FaAngular, FaDocker, FaReact } from "react-icons/fa";
-import React from "react";
 
 export const WORK_EXPERIENCE_LIST: TimelineSteps = [
   {

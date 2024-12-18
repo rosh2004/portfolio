@@ -1,8 +1,6 @@
 import CallToAction from "./CallToAction"
 import MainLogo from "./MainLogo"
 import NavbarLink from "./NavbarLink"
-import { GiHamburgerMenu } from "react-icons/gi"
-import { Toggle } from "./ui/toggle"
 import Link from "next/link"
 
 function Navbar() {

@@ -5,9 +5,7 @@ import { ProjectList } from "../lib/project-data"
 import { Button } from "@/components/ui/button";
 import { FaArrowRight } from "react-icons/fa";
 
-type Props = {}
-
-function ProjectsSection({}: Props) {
+function ProjectsSection() {
   const projectList = ProjectList;
   return (
     <div>

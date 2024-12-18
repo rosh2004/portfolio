@@ -1,9 +1,8 @@
 import SectionHeading from "@/components/ui/SectionHeading"
 import Image from "next/image"
 
-type Props = {}
 
-function EducationSection({}: Props) {
+function EducationSection() {
   return (
     <div>
       <SectionHeading>Education</SectionHeading>
