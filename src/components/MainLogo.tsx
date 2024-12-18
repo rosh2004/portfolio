@@ -1,7 +1,7 @@
 function MainLogo(props: React.SVGProps<SVGSVGElement>) { 
   return (
     <svg
-      width="191"
+      width="160"
       height="52"
       viewBox="0 0 191 52"
       fill="green"
