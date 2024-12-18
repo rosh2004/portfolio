@@ -13,7 +13,7 @@ function ProjectsSection({}: Props) {
     <div>
       <article>
         <SectionHeading>Projects</SectionHeading>
-        <div className="flex justify-center mx-auto p-12">
+        <div className="flex justify-center mx-auto p-6">
           <ProjectsCarousel projectList={projectList}></ProjectsCarousel>
         </div>
         <div className="flex justify-center">

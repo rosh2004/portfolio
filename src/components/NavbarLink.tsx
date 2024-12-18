@@ -1,5 +1,8 @@
+"use client"
+
 import { Url } from 'next/dist/shared/lib/router/router'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 type Props = {
@@ -8,8 +11,9 @@ type Props = {
 }
 
 function NavbarLink({href, title}: Props) {
+  const pathname = usePathname()
   return (
-    <Link className='text-xl rounded-md px-4' href={ href }>{title}</Link>
+    <div className={`text-xl rounded-md px-4 ${href === pathname ? 'opacity-50 hover:cursor-default' : ''}`} href={ href }>{title}</div>
   )
 }
 
