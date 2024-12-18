@@ -8,25 +8,27 @@ type Props = {
 function TechStacksRow({className}: Props) {
 
   const techStacks = [
-    'React',
     'Next.js',
-    'TailwindCSS',
+    'React',
+    'Angular2+',
     'TypeScript',
+    'TailwindCSS',
+    'Javascript',
+    'Sass',
+    'JEST',
     'Node.js',
-    'Express',
-    'MongoDB',
+    'MSSQL',
     'GraphQL',
-    'Apollo Client',
-    'Apollo Server',
     'PostgreSQL',
-    'Prisma',
-    'Docker',
-    'Kubernetes',
-    'AWS',
-    'Google Cloud',
-    'Firebase',
-    'Netlify',
-
+    'Kendo UI',
+    'Material UI',
+    'Jira',
+    'Confluence',
+    'Bitbucket',
+    'Github',
+    'Git',
+    'REST API',
+    'Agile',
   ]
 
   return (

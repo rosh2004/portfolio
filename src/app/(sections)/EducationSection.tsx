@@ -15,7 +15,7 @@ function EducationSection({}: Props) {
             I have completed my 3 year degree in Bachelor in Computer Engineering from the University of Engineering and Technology, Lahore.
           </p>
         </div>
-        <Image className="m-6" src="/images/uet-lahore.png" width={300} height={300} alt="Logo of University of Engineering and Technology"></Image>
+        <Image className="m-6" src="/images/uet-lahore.png" width={250} height={250} alt="Logo of University of Engineering and Technology"></Image>
       </div>
     </div>
   )
