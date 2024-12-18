@@ -39,6 +39,7 @@ export default function RootLayout({
         <div className="pt-20 md:pt-32">
           {children}
         </div>
+        <Analytics />
       </body>
     </html>
   );

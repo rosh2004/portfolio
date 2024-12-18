@@ -10,7 +10,7 @@ function HomeSection() {
           <h1 className='lg:text-7xl md:text-5xl text-4xl font-medium mb-1'>Hi, I&apos;m <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Roshaan Siddiqui!</span></h1>
           <h2 className='lg:text-4xl md:text-3xl text-2xl font-medium opacity-60 '>Full Stack Web Developer</h2>
           <p className='text-foreground mt-6 leading-5 md:text-lg'>
-            I&apos;m a professional web developer with a passion for creating modern, responsive websites and applications. I specialize in building full-stack applications using the latest technologies and frameworks. I'm always eager to learn new things and take on new challenges.
+            I&apos;m a professional web developer with a passion for creating modern, responsive websites and applications. I specialize in building full-stack applications using the latest technologies and frameworks. I&apos;m always eager to learn new things and take on new challenges.
           </p>
           <TechStacksRow className='mt-6' />
         </div>
