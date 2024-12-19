@@ -29,7 +29,7 @@ function Navbar() {
         <div className="hidden sm:flex justify-center items-center">
           {renderedLinks}
         </div>
-        <CallToAction>Hire Me</CallToAction>
+        <CallToAction>Contact Me</CallToAction>
       </nav>
     </header>
   )
