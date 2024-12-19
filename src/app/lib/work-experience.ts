@@ -1,4 +1,4 @@
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { RiNextjsFill, RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
 import { TimelineSteps } from "../../../types";
 import { SiJest, SiSupabase, SiTypescript } from "react-icons/si";
 import { FaAngular, FaDocker, FaReact } from "react-icons/fa";
@@ -18,7 +18,7 @@ export const WORK_EXPERIENCE_LIST: TimelineSteps = [
       {
         title: "Research and Development - DevOps",
         description: "Description for Devops",
-        icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, FaDocker],
+        icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, FaDocker, RiVercelFill],
       },
       {
         title: "Label Designer - HTML5 Canvas",

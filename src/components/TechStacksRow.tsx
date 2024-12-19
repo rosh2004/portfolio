@@ -9,6 +9,7 @@ function TechStacksRow({className}: Props) {
 
   const techStacks = [
     'Next.js',
+    'Vercel',
     'React',
     'Angular2+',
     'TypeScript',
