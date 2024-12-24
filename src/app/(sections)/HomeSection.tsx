@@ -12,7 +12,7 @@ function HomeSection() {
           <h2 className='lg:text-4xl md:text-3xl text-2xl font-medium opacity-60 '>Full Stack Web Developer</h2>
           <p className='dark:text-white/70 mt-6 leading-5 md:text-lg '>
             I&apos;m a professional <Strong>Full Stack Web Developer</Strong> with a passion for creating modern, <Strong>Responsive Websites</Strong> and <Strong>Web Applications</Strong>.
-            I have around <Strong>4 Years</Strong> of professional experience at a Software Company.
+            I have around <Strong><span className='text-xl md:text-2xl'>4 Years</span></Strong> of professional experience at a Software Company.
             I specialize in building <Strong>Full-Stack</Strong> applications using the <Strong>latest technologies and frameworks</Strong>. 
             I&apos;m always eager to learn new things and take on new challenges. 
             Recently I have started working on <Strong>NextJS</Strong>, I am proefficient in <Strong>React</Strong> and <Strong>Angular</Strong>
