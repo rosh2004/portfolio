@@ -16,13 +16,13 @@ function ProjectsCarousel({projectList}: Props) {
         <div className="p-1 ">
           <Card className="bg-primary dark:bg-primary min-w-[280px]">
             <CardContent className="flex items-center justify-center m-6 p-0 relative">
-              <Image src={project.image} alt={project.title} width={300} height={300} />
+              <Image src={project.image} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
               <div className="absolute inset-0 flex justify-center items-end">
                 <div className="w-[300px] h-[300px] flex justify-center items-end">
-                  <Link href={project.sourceCodeLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/20 dark:bg-black/20 hover:bg-black/60 dark:hover:bg-black/60 rounded-none border-r border-foreground-light">
+                  <Link href={project.sourceCodeLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none border-r border-foreground-light">
                     <FaCode />
                   </Link>
-                  <Link href={project.projectLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/20 dark:bg-black/20 hover:bg-black/60 dark:hover:bg-black/60 rounded-none">
+                  <Link href={project.projectLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none">
                     <FaEye />
                   </Link>
                 </div>
@@ -39,7 +39,7 @@ function ProjectsCarousel({projectList}: Props) {
   });
   return (
     <Carousel className="w-[70%] min-w-[300px] md:w-[90%] xl:w-[80%]">
-        <CarouselContent>
+        <CarouselContent className="justify-around">
           {renderedProjects}
         </CarouselContent>
         <CarouselPrevious />
