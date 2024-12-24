@@ -2,6 +2,7 @@ import { RiNextjsFill, RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
 import { TimelineSteps } from "../../../types";
 import { SiJest, SiSupabase, SiTypescript } from "react-icons/si";
 import { FaAngular, FaDocker, FaReact } from "react-icons/fa";
+import { GrGraphQl } from "react-icons/gr";
 
 export const WORK_EXPERIENCE_LIST: TimelineSteps = [
   {
@@ -13,21 +14,21 @@ export const WORK_EXPERIENCE_LIST: TimelineSteps = [
       linkedin: "https://www.linkedin.com/company/techlogix/",
     },
     title: "Senior Software Engineer (SSE)",
-    description: "",
+    description: "Collaborated with multiple teams and projects as a Fullstack Developer, significantly contributing to research and development, strategic planning, decision-making, and problem-solving.",
     teams: [
       {
         title: "Research and Development - DevOps",
-        description: "Description for Devops",
-        icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, FaDocker, RiVercelFill],
+        description: "Conducting research on new technologies and DevOps practices to integrate them into the company's infrastructure.",
+        icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, FaDocker, RiVercelFill, GrGraphQl],
       },
       {
         title: "Label Designer - HTML5 Canvas",
-        description: "Description for Tag Designer",
+        description: "Developed a graphics designer tool for creating labels with barcodes, QR codes, and text using the Konva.js library. Led the front-end development of the project.",
         icons: [FaAngular, SiTypescript],
       },
       {
         title: "Forex Exchange Internal Management System",
-        description: "AFX Description",
+        description: "Developed multiple modules for an enterprise management system of a Forex Exchange company. Delivered two sub-modules, each containing around six screens with full CRUD operations, within a tight deadline.",
         icons: [FaAngular, SiTypescript],
       },
     ],
@@ -41,16 +42,16 @@ export const WORK_EXPERIENCE_LIST: TimelineSteps = [
       linkedin: "https://www.linkedin.com/company/techlogix/",
     },
     title: "Software Engineer",
-    description: "SE Description",
+    description: "Served as a Front-End Developer, initially working on the Track and Trace Solution and eventually leading the front-end development. Later transitioned to React for an HR management system, working with various front-end technologies.",
     teams: [
       {
         title: "HR Management System",
-        description: "ATLAS Description",
+        description: "Developed the pay slip module for a global Human Resource Management System using React, Tailwind, and TypeScript, with testing implemented using Jest. Collaborated with a team of over 50 members across multiple regions.",
         icons: [FaReact, RiTailwindCssFill, SiTypescript, SiJest],
       },
       {
         title: "Product Supply Chain Tracking Solution",
-        description: "Digitrax Description",
+        description: "Joined the team during the initial design phase of version 2 of the application. Contributed to multiple modules and eventually led the front-end development. Utilized Angular with Kendo UI, Google Maps API, and geofencing to track the product supply chain from production to placement, configuring incidents and events throughout the lifecycle.",
         icons: [FaAngular, SiTypescript],
       },
     ],

@@ -7,7 +7,7 @@ type Props = {
 
 function CallToAction({children}: Props) {
   return (
-    <Button className='text-md font-bold w-[80px] md:w-[128px] bg-primary dark:bg-primary hover:bg-accent dark:hover:bg-accent text-foreground-light dark:text-foreground-light'>{children}</Button>
+    <Button className='text-md font-bold w-[100px] md:w-[128px] bg-primary dark:bg-primary hover:bg-accent dark:hover:bg-accent text-foreground-light dark:text-foreground-light'>{children}</Button>
   )
 }
 
