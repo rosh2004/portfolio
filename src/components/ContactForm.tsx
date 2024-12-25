@@ -7,35 +7,39 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 
 function ContactForm() {
-  const sendEmailAction = async (formData: FormData) => {
+  const sendEmailAction = async (formData: unknown) => {
     "use server";
+    const isValidFormData = (data: unknown): data is FormData => {
+      return data instanceof FormData;
+    };
+
+    if (!isValidFormData(formData)) {
+      throw new Error("Invalid form data");
+    }
     const name= formData.get("name");
     const email= formData.get("email");
     const message= formData.get("message");
 
     if(!name || !email || !message) {
       throw new Error("Fields cannot be empty");
-    } else {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          access_key: process.env.WEB_3_FORM_ACCESS_KEY_2,
-          name,
-          email,
-          message
-        }),
-      });
-      const result = await response.json();
-      if (result.success) {
-        console.log(result);
-      }
     }
-
-
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: process.env.WEB_3_FORM_ACCESS_KEY_2,
+        name,
+        email,
+        message
+      }),
+    });
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
+    }
   };
 
   return (

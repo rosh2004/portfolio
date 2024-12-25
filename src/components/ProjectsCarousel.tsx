@@ -14,23 +14,23 @@ function ProjectsCarousel({projectList}: Props) {
     return (
       <CarouselItem key={index} className="md:basis-1/2 lg:basis-[47%] xl:basis-1/3 2xl:basis-1/4">
         <div className="p-1 ">
-          <Card className="bg-accent dark:bg-accent min-w-[280px]">
+          <Card className="min-w-[280px] md:min-w-[330px]">
             <CardContent className="flex items-center justify-center m-6 p-0 relative">
-              <Image src={project.image} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
+              <Image src={project.images[0]} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
               <div className="absolute inset-0 flex justify-center items-end">
                 <div className="w-[300px] h-[300px] flex justify-center items-end">
-                  <Link href={project.sourceCodeLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none border-r border-foreground-light">
+                  {project.sourceCodeLink && <Link href={project.sourceCodeLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none border-r border-foreground-light">
                     <FaCode />
-                  </Link>
-                  <Link href={project.projectLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none">
+                  </Link>}
+                  {project.projectLink && <Link href={project.projectLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none">
                     <FaEye />
-                  </Link>
+                  </Link>}
                 </div>
               </div>
             </CardContent>
             <CardHeader className="pt-0 h-44 flex flex-col ">
-              <CardTitle className="text-lg text-foreground-light dark:text-foreground-light">{project.title}</CardTitle>
-              <CardDescription className="flex-grow text-sm text-foreground-light dark:text-foreground-light overflow-ellipsis ...">{project.description}</CardDescription>
+              <CardTitle className="text-lg">{project.title}</CardTitle>
+              <CardDescription className="flex-grow text-sm overflow-ellipsis ...">{project.description}</CardDescription>
             </CardHeader>
           </Card>
         </div>

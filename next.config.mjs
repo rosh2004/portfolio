@@ -6,7 +6,14 @@ const nextConfig = {
       {
         pathname: '/images/**',
       }
-    ] 
+    ],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'utfs.io',
+        pathname: '/f/**',
+      }
+    ]
   }
 };
 

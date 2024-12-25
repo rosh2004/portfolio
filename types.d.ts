@@ -1,11 +1,12 @@
 import { IconType } from 'react-icons';
 
 type Project = {
+  type: 'professional' | 'personal';
   title: string;
   description: string;
-  image: string;
-  sourceCodeLink: string;
-  projectLink: string;
+  images: string[];
+  sourceCodeLink?: string;
+  projectLink?: string;
 }
 
 type TimelineStep = {
