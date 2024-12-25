@@ -6,10 +6,11 @@ import Link from "next/link"
 function Navbar() {
 
   const links = [
-    // { href: '/', title: 'Home' },
-    // { href: '/blogs', title: 'Blogs' },
+    { href: '/', title: 'Home' },
+    { href: '/blogs', title: 'Blogs' },
   ];
   const renderedLinks = links.map((link, index) => {
+    return null;
     return (
       <Link key={index} href={link.href}>
         <NavbarLink  href={link.href} title={link.title} />
