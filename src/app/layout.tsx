@@ -3,6 +3,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { Inter, Roboto } from "next/font/google";
 import Navbar from "../components/Navbar";
+import DownloadResumeButton from "@/components/DownloadResumeButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,6 +40,7 @@ export default function RootLayout({
         <div className="pt-20 md:pt-32">
           {children}
         </div>
+        <DownloadResumeButton />
         <Analytics />
       </body>
     </html>

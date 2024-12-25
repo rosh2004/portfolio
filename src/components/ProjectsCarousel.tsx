@@ -14,7 +14,7 @@ function ProjectsCarousel({projectList}: Props) {
     return (
       <CarouselItem key={index} className="md:basis-1/2 lg:basis-[47%] xl:basis-1/3 2xl:basis-1/4">
         <div className="p-1 ">
-          <Card className="bg-primary dark:bg-primary min-w-[280px]">
+          <Card className="bg-accent dark:bg-accent min-w-[280px]">
             <CardContent className="flex items-center justify-center m-6 p-0 relative">
               <Image src={project.image} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
               <div className="absolute inset-0 flex justify-center items-end">

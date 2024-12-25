@@ -18,12 +18,13 @@ const config: Config = {
         },
 				primary: {
 					DEFAULT: "var(--primary)",
+          700: "var(--primary-700)",
         },
         secondary: {
 					DEFAULT: "var(--secondary)",
         },
         accent: {
-					DEFAULT: "var(--accent)",
+					DEFAULT: "var(--primary-700)",
         },
         sectionBg: {
           DEFAULT: "var(--section-bg)",
