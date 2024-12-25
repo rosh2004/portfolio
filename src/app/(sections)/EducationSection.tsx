@@ -5,7 +5,7 @@ import Image from "next/image"
 
 function EducationSection() {
   return (
-    <div>
+    <article>
       <SectionHeading>Education</SectionHeading>
       <div className='flex flex-col-reverse lg:flex-row lg:justify-center items-center'>
         <div className="max-w-[800px]">
@@ -18,7 +18,7 @@ function EducationSection() {
         </div>
         <Image className="m-6" src="/images/uet-lahore.png" width={250} height={250} alt="Logo of University of Engineering and Technology"></Image>
       </div>
-    </div>
+    </article>
   )
 }
 

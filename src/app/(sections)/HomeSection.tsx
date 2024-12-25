@@ -5,7 +5,7 @@ import Image from 'next/image'
 function HomeSection() {
 
   return (
-    <div>
+    <article>
       <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
         <div className='lg:pr-14 '>
           <h1 className='lg:text-7xl md:text-5xl text-4xl font-medium mb-1'>Hi, I&apos;m <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Roshaan Siddiqui!</span></h1>
@@ -38,7 +38,7 @@ function HomeSection() {
         </SocialHandle>
 
       </div>
-    </div>
+    </article>
   )
 }
 

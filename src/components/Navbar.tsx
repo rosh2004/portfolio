@@ -6,7 +6,7 @@ import Link from "next/link"
 function Navbar() {
 
   const links = [
-    { href: '/', title: 'Home' },
+    // { href: '/', title: 'Home' },
     // { href: '/blogs', title: 'Blogs' },
   ];
   const renderedLinks = links.map((link, index) => {

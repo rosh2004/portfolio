@@ -1,3 +1,4 @@
+import ContactSection from "./(sections)/ContactSection";
 import EducationSection from "./(sections)/EducationSection";
 import HomeSection from "./(sections)/HomeSection";
 import ProjectsSection from "./(sections)/ProjectsSection";
@@ -18,6 +19,9 @@ export default function Home() {
       </Section>
       <Section>
         <EducationSection />
+      </Section>
+      <Section alt>
+        <ContactSection />
       </Section>
     </main>
   );

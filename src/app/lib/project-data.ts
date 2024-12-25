@@ -2,7 +2,7 @@ import { Project } from "../../../types";
 
 export const ProjectList: Project[] = [
   {
-    title: "PLACEHOLDER: Personal Portfolio Website",
+    title: "Personal Portfolio Website",
     description: "A modern portfolio website built with NextJS the one you are currently viewing. It features a responsive design.",
     image: "/images/projects/portfolio-site.png",
     projectLink: "https://roshfire.com",
