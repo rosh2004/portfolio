@@ -28,7 +28,7 @@ export const WORK_EXPERIENCE_LIST: TimelineSteps = [
       },
       {
         title: "Forex Exchange Internal Management System",
-        description: "Developed multiple modules for an enterprise management system of a Forex Exchange company. Delivered two sub-modules, each containing around six screens with full CRUD operations, within a tight deadline.",
+        description: "Developed multiple modules for an enterprise management system of a Forex Exchange company. Successfully delivered 2 sub-modules within 1.5 months, each comprising approximately 6 screens with full CRUD functionality, resulting in improved project timelines and client satisfaction.",
         icons: [FaAngular, SiTypescript],
       },
     ],
