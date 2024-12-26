@@ -9,7 +9,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
       // priority: ,
     },
     {
-      url: `${process.env.SITE_BASE_URL}/about`
+      url: `www.${process.env.SITE_BASE_URL}`
     },
   ]
 }

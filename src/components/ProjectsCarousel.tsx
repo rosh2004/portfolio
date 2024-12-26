@@ -16,9 +16,11 @@ function ProjectsCarousel({projectList}: Props) {
         <div className="p-1 ">
           <Card className="min-w-[280px] md:min-w-[330px]">
             <CardContent className="flex items-center justify-center m-6 p-0 relative">
-              <Image src={project.images[0]} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
-              <div className="absolute inset-0 flex justify-center items-end">
-                <div className="w-[300px] h-[300px] flex justify-center items-end">
+              <Link href={project.images[0]} target="_blank">
+                <Image src={project.images[0]} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
+              </Link>
+              <div className="absolute bottom-0 inset-x-0 flex justify-center">
+                <div className="w-[300px] flex justify-center items-end">
                   {project.sourceCodeLink && <Link href={project.sourceCodeLink} className="flex justify-center items-center flex-1 h-12 text-foreground-light bg-black/80 dark:bg-black/80 hover:bg-black dark:hover:bg-black rounded-none border-r border-foreground-light">
                     <FaCode />
                   </Link>}
