@@ -31,7 +31,7 @@ function ContactForm() {
     const emailContent = await EmailTemplate({name, email, message});
     try {
       const { data, error } =  await resend.emails.send({
-        from: 'roshaan@roshfire.com',
+        from: 'portfolio@roshfire.com',
         to: ['roshaan20043@gmail.com', 'roshaan1off@gmail.com'],
         subject: 'Message From Portfolio Site',
         react: emailContent
