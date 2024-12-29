@@ -1,4 +1,3 @@
-
 import { FaArrowRight } from "react-icons/fa";
 import { Button } from "./ui/button";
 import { Card } from "./ui/card";
@@ -6,46 +5,53 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 
+import { Resend } from 'resend';
+import { EmailTemplate } from "./EmailTemplate";
+const resend = new Resend(process.env.RESEND_API_KEY);
+
 function ContactForm() {
-  const sendEmailAction = async (formData: unknown) => {
+  const sendEmailAction = async (formData: unknown): Promise<void> => {
     "use server";
     const isValidFormData = (data: unknown): data is FormData => {
       return data instanceof FormData;
     };
-
+    
     if (!isValidFormData(formData)) {
       throw new Error("Invalid form data");
     }
-    const name= formData.get("name");
-    const email= formData.get("email");
-    const message= formData.get("message");
-
+    const name= formData.get("name") as string;
+    const email= formData.get("email") as string;
+    const message= formData.get("message") as string;
+    
     if(!name || !email || !message) {
       throw new Error("Fields cannot be empty");
     }
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: process.env.WEB_3_FORM_ACCESS_KEY_2,
-        name,
-        email,
-        message
-      }),
-    });
-    const result = await response.json();
-    if (result.success) {
-      console.log(result);
+
+    // const resend = new Resend('re_JFJ1dTSU_6B2aniM7a3TkMwH5u7hRBkbA');
+    const emailContent = await EmailTemplate({name, email, message});
+    try {
+      const { data, error } =  await resend.emails.send({
+        from: 'roshaan@roshfire.com',
+        to: ['roshaan20043@gmail.com', 'roshaan1off@gmail.com'],
+        subject: 'Message From Portfolio Site',
+        react: emailContent
+      });
+
+      if (error) {
+        console.error(error);
+        return;
+      }
+      console.log(data);
+      return;
+    } catch (error) {
+      console.error(error);
+      throw new Error("Failed to send email");
     }
   };
 
   return (
     <form action={sendEmailAction} className="flex justify-center">
       <Card className="flex flex-col min-w-[400px] max-w-[600px] w-[80%] p-8 gap-2">
-        <Input type="hidden" name="subject" value="Message From Portfolio" />
         <Label className="pt-4" htmlFor="name">Name:</Label>
         <Input required type="text" id="name" name="name" placeholder="Name"/>
         <Label className="pt-4" htmlFor="email">Email:</Label>
