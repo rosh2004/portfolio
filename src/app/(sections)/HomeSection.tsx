@@ -32,11 +32,6 @@ function HomeSection() {
         </SocialHandle>
         <SocialHandle type='twitter'>
         </SocialHandle>
-        <SocialHandle type='phone'>
-        </SocialHandle>
-        <SocialHandle type='email'>
-        </SocialHandle>
-
       </div>
     </article>
   )
