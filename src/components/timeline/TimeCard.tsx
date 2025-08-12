@@ -1,5 +1,3 @@
-import Link from "next/link"
-import { FaLinkedin } from "react-icons/fa"
 import { HiBuildingOffice } from "react-icons/hi2"
 import { TimelineStep } from "../../../types"
 import TimeSubStep from "./TimeSubStep"
