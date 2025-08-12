@@ -60,7 +60,7 @@ export const ProjectList: Project[] = [
     title: "Personal Portfolio Website",
     description: "A modern portfolio website built with NextJS the one you are currently viewing. It features a responsive design. Check sourcecode for repository with more details and code",
     images: ["https://utfs.io/f/7kE3rOCyK0iEKoo5eOSZIX3hjKMJaDYSoP79Gte6Zx5lu4qy"],
-    projectLink: "https://roshfire.com",
+    projectLink: "https://roshaantech.com/",
     sourceCodeLink: "https://github.com/rosh2004/portfolio",
   }
 ];
