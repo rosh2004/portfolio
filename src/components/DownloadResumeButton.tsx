@@ -9,8 +9,8 @@ function DownloadResumeButton() {
 
   const handleClick = () => {
     const link = document.createElement('a');
-    link.href = '/pdfs/Roshaan Siddiqui Dec-2024.pdf';
-    link.download = 'Roshaan Siddiqui Dec-2024.pdf';
+    link.href = '/pdfs/Roshaan Siddiqui August 2025 - Contactless.pdf';
+    link.download = 'Roshaan Siddiqui August 2025 - Contactless.pdf';
     link.click();
   };
 

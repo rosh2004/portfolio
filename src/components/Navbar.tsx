@@ -30,7 +30,6 @@ function Navbar() {
         <div className="hidden sm:flex justify-center items-center">
           {renderedLinks}
         </div>
-        <CallToAction>Contact Me</CallToAction>
       </nav>
     </header>
   )

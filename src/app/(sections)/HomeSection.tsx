@@ -25,14 +25,6 @@ function HomeSection() {
           />
         </div>
       </div>
-      <div className="flex justify-center gap-4 md:gap-8 mt-10">
-        <SocialHandle type='linkedin'>
-        </SocialHandle>
-        <SocialHandle type='github'>
-        </SocialHandle>
-        <SocialHandle type='twitter'>
-        </SocialHandle>
-      </div>
     </article>
   )
 }
