@@ -1,42 +1,37 @@
 import { Project } from "../../../types";
 
 export const ProjectList: Project[] = [
+
   {
-    type: "personal",
-    title: "Personal Portfolio Website",
-    description: "A modern portfolio website built with NextJS the one you are currently viewing. It features a responsive design. Check sourcecode for repository with more details and code",
-    images: ["https://utfs.io/f/7kE3rOCyK0iEKoo5eOSZIX3hjKMJaDYSoP79Gte6Zx5lu4qy"],
-    projectLink: "https://roshfire.com",
-    sourceCodeLink: "https://github.com/rosh2004/portfolio",
+    type: "professional",
+    title: "Jayu Merchant Portal - B2B",
+    description: "Led the front-end in an Angular 16 project using PrimeNG, Bootstrap, Reactive Forms, RxJS, and NgRX, delivering 20+ pixel-perfect, responsive pages from Figma designs. Built shared components, followed strict TypeScript practices, and ensured quality with thorough unit testing.",
+    images: [
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iETfqecrXY6Ex5y02adPDIg9QbhUVfAwemtClL",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iENmr8A7UKyTaKtz1eb3Movcr7S0jfPBuL4A5U",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEErbKltkxdDlrvhPKGVeFnRIX5jQ2BL849Msp",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEpiZSMkrT7HJNFoIPOL8UME4xd0z5ZvwfnkuV",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iE4esFDyLiuNOv1jowpB90ZX4tm8LM53yPDKnG",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEXMym0o1ubPOM8oYtdAnVxB6NlQKFk4yDRevI",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEBo6hUUy7IL4G9Sm1gkoUJpKCBQ6w5ubPZjhF",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iE1NaUHqVAETQCMgL4u8mWhcjfYsa0ZwdtDeiz",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEqyOEWoRFvOQj1wTIgxCGu7DfSAEXp8l9zU0k",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iE3LLzquSjzTMFO4YkPUb1ldwDauxcBXqpRNtr",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEndHNpG1cI65hHWwZ4DJiMQVqyv9lm8kEdsO7",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEFGDosMTxT0d5NfWZtuyOKr4GA3i8BcneYXsw",
+    ],
   },
-  // {
-  //   title: "PLACEHOLDER: E-Commerce Storefront",
-  //   description: "An e-commerce frontend built with NextJS, featuring dynamic product pages and optimized SEO using server-side rendering techniques.",
-  //   image: "/images/placeholder-1.png",
-  //   projectLink: "https:blog.roshfire.com",
-  //   sourceCodeLink: "https://github.com/rosh2004/next-test-blogpost",
-  // },
-  // {
-  //   title: "PLACEHOLDER: Markdown Blog Engine",
-  //   description: "A blogging platform that uses markdown files for content. Posts are pre-rendered with NextJS to ensure fast and SEO-friendly delivery.",
-  //   image: "/images/placeholder-1.png",
-  //   projectLink: "https:blog.roshfire.com",
-  //   sourceCodeLink: "https://github.com/rosh2004/next-test-blogpost",
-  // },
-  // {
-  //   title: "PLACEHOLDER: Dynamic Weather Dashboard",
-  //   description: "A weather dashboard built with NextJS, integrating third-party APIs to provide real-time weather updates and a clean, responsive design.",
-  //   image: "/images/placeholder.png",
-  //   projectLink: "https:blog.roshfire.com",
-  //   sourceCodeLink: "https://github.com/rosh2004/next-test-blogpost",
-  // },
-  // {
-  //   title: "PLACEHOLDER: Custom Blog CMS",
-  //   description: "A custom-built content management system for blogs using NextJS, with features like dynamic routing, markdown support, and search functionality.",
-  //   image: "/images/placeholder.png",
-  //   projectLink: "https:blog.roshfire.com",
-  //   sourceCodeLink: "https://github.com/rosh2004/next-test-blogpost",
-  // },
+  {
+    type: "professional",
+    title: "AI/LLM Assisted Contract Management System",
+    description: "Developed clean, scalable, and tested code by creating custom components, complex hooks, and layered architecture, using Tailwind CSS and component libraries. Optimized performance to prevent memory leaks and control rendering. Worked on API development in Nest, server functions, server actions, and the App Router. Leveraged Syncfusion for features like Kanban boards, document editors, PDF viewers, and rich text editors, used migrations for Supabase DB updates, and resolved multiple complex bugs.",
+    images: [
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEF1WqKkGTxT0d5NfWZtuyOKr4GA3i8BcneYXs",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iELSg8sZMdCqWwpOvfgBJyH2hzIij9EDaYbsrk",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEZs969hmJsQRAXVWegvhSfDcFa0xOLGt4d79M",
+      "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEpzuXBPrT7HJNFoIPOL8UME4xd0z5ZvwfnkuV"
+    ],
+  },
   {
     type: "professional",
     title: "Label Designer - HTML5 Canvas",
@@ -60,4 +55,12 @@ export const ProjectList: Project[] = [
       "https://utfs.io/f/7kE3rOCyK0iEEW50LpkxdDlrvhPKGVeFnRIX5jQ2BL849Msp"
     ],
   },
+  {
+    type: "personal",
+    title: "Personal Portfolio Website",
+    description: "A modern portfolio website built with NextJS the one you are currently viewing. It features a responsive design. Check sourcecode for repository with more details and code",
+    images: ["https://utfs.io/f/7kE3rOCyK0iEKoo5eOSZIX3hjKMJaDYSoP79Gte6Zx5lu4qy"],
+    projectLink: "https://roshfire.com",
+    sourceCodeLink: "https://github.com/rosh2004/portfolio",
+  }
 ];

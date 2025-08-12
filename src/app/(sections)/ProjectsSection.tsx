@@ -19,14 +19,16 @@ function ProjectsSection() {
         <CardTitle className="pb-2">{project.title}</CardTitle>
         <CardDescription>{project.description}</CardDescription>
       </CardHeader>
-      <CardContent className="flex items-center xl:h-[400px] pb-10">
-        <Carousel className="w-full max-w-[220px] sm:max-w-sm md:max-w-md mx-auto">
+      <CardContent className="flex items-center xl:h-[400px] pb-2">
+        <Carousel className="w-full max-w-[220px] sm:max-w-sm md:max-w-lg mx-auto">
           <CarouselContent>
             {project.images.map((image, index) => (
               <CarouselItem key={image} className="flex items-center">
-                <Link href={image} target="_blank" >
-                  <Image  src={image} alt={`${project.title}-image[${index}]`} height={300} width={500} objectFit="cover"/>
-                </Link>
+                <div className="h-[300px] w-full relative">
+                  <Link href={image} target="_blank" >
+                    <Image  src={image} alt={`${project.title}-image[${index}]`} fill sizes="20" className="object-contain"/>
+                  </Link>
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>

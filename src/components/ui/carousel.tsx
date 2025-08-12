@@ -201,6 +201,7 @@ const CarouselPrevious = React.forwardRef<
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
 
   return (
+    canScrollPrev &&
     <Button
       ref={ref}
       variant={variant}
@@ -230,6 +231,7 @@ const CarouselNext = React.forwardRef<
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
   return (
+    canScrollNext &&
     <Button
       ref={ref}
       variant={variant}

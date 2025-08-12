@@ -17,7 +17,7 @@ function ProjectsCarousel({projectList}: Props) {
           <Card className="min-w-[280px] md:min-w-[330px]">
             <CardContent className="flex items-center justify-center m-6 p-0 relative">
               <Link href={project.images[0]} target="_blank">
-                <Image src={project.images[0]} alt={project.title} height={300} width={300} className="h-[300px] w-[300px] object-cover"/>
+                <Image src={project.images[0]} alt={project.title} height={300} width={300} className="max-h-[300px] h-[300px] w-[300px] object-cover"/>
               </Link>
               <div className="absolute bottom-0 inset-x-0 flex justify-center">
                 <div className="w-[300px] flex justify-center items-end">
