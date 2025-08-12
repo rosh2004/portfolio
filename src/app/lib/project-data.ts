@@ -62,5 +62,13 @@ export const ProjectList: Project[] = [
     images: ["https://utfs.io/f/7kE3rOCyK0iEKoo5eOSZIX3hjKMJaDYSoP79Gte6Zx5lu4qy"],
     projectLink: "https://roshaantech.com/",
     sourceCodeLink: "https://github.com/rosh2004/portfolio",
+  },
+  {
+    type: "personal",
+    title: "MDX Blog posts sourced from github repo with NextJS",
+    description: "Next JS Blog that is statically generated and uses github repo for the blogposts, It utilizes MDX for writing blog posts.",
+    images: ["https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iELeoTqomMdCqWwpOvfgBJyH2hzIij9EDaYbsr"],
+    projectLink: "https://blog.roshfire.com/",
+    sourceCodeLink: "https://github.com/rosh2004/my-nextjs-remote-mdx-blog",
   }
 ];
