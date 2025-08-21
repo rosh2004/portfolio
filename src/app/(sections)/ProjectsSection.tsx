@@ -46,7 +46,7 @@ function ProjectsSection() {
           <>
             <h3 className='text-3xl md:text-5xl font-medium mb-1'>Professional</h3>
 
-            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 p-8">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 p-2 sm:p-8">
               {renderedProfessionalProjects}
             </div>
           </>

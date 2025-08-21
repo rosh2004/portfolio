@@ -10,7 +10,7 @@ function WorkExperienceSection() {
     <div>
       <SectionHeading>Professional Experience</SectionHeading>
       <div className="flex justify-center">
-        <div className="md:w-3/5 w-full">
+        <div className="md:w-4/5 w-full">
           <Timeline professionalTimeline={workExperienceList}></Timeline>
         </div>
       </div>

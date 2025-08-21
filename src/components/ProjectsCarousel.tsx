@@ -12,11 +12,11 @@ type Props = {
 function ProjectsCarousel({projectList}: Props) {
   const renderedProjects = projectList.map((project, index) => {
     return (
-      <CarouselItem key={index} className="md:basis-1/2 lg:basis-[47%] xl:basis-1/3 2xl:basis-1/4">
+      <CarouselItem key={index} className="md:basis-1/2 lg:basis-[47%] xl:basis-1/3">
         <div className="p-1 ">
           <Card className="min-w-[280px] md:min-w-[330px]">
             <CardContent className="flex items-center justify-center m-6 p-0 relative">
-              <Link href={project.images[0]} target="_blank">
+              <Link href={project.images[0] ?? ''} target="_blank">
                 <Image src={project.images[0]} alt={project.title} height={300} width={300} className="max-h-[300px] h-[300px] w-[300px] object-cover"/>
               </Link>
               <div className="absolute bottom-0 inset-x-0 flex justify-center">
@@ -41,7 +41,7 @@ function ProjectsCarousel({projectList}: Props) {
   });
   return (
     <Carousel className="w-[70%] min-w-[300px] md:w-[90%] xl:w-[80%]">
-        <CarouselContent className="justify-center gap-20">
+        <CarouselContent>
           {renderedProjects}
         </CarouselContent>
         <CarouselPrevious />
