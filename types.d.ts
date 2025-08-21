@@ -7,6 +7,7 @@ type Project = {
   images: string[];
   sourceCodeLink?: string;
   projectLink?: string;
+  icons?: IconType[];
 }
 
 type TimelineStep = {

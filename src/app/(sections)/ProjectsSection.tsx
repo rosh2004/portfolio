@@ -6,6 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
+import IconBar from "@/components/timeline/IconBar";
 // import { Button } from "@/components/ui/button";
 // import { FaArrowRight } from "react-icons/fa";
 
@@ -15,10 +16,13 @@ function ProjectsSection() {
 
   const renderedProfessionalProjects = professionalProjectList.map((project, index) => (
     <Card key={index} className="flex flex-col">
-      <CardHeader className="xl:h-[180px]">
+      <CardHeader>
         <CardTitle className="pb-2">{project.title}</CardTitle>
-        <CardDescription>{project.description}</CardDescription>
       </CardHeader>
+        <div className="flex flex-col justify-start px-6">
+          <CardDescription>{project.description}</CardDescription>
+          { (project.icons && project.icons?.length > 0) && <IconBar icons={project.icons} />}
+        </div>
       <CardContent className="flex items-center xl:h-[400px] pb-2">
         <Carousel className="w-full max-w-[220px] sm:max-w-sm md:max-w-lg mx-auto">
           <CarouselContent>

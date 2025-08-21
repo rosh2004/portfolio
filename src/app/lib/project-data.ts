@@ -1,4 +1,8 @@
+import { FaAngular, FaReact } from "react-icons/fa";
 import { Project } from "../../../types";
+import { SiDotnet, SiMaterialdesign, SiNestjs, SiPrimeng, SiShadcnui, SiSqlite, SiSupabase, SiTypescript } from "react-icons/si";
+import { BsBootstrapFill } from "react-icons/bs";
+import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export const ProjectList: Project[] = [
 
@@ -20,6 +24,7 @@ export const ProjectList: Project[] = [
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEndHNpG1cI65hHWwZ4DJiMQVqyv9lm8kEdsO7",
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEFGDosMTxT0d5NfWZtuyOKr4GA3i8BcneYXsw",
     ],
+    icons: [FaAngular, SiTypescript, SiPrimeng, BsBootstrapFill],
   },
   {
     type: "professional",
@@ -31,6 +36,7 @@ export const ProjectList: Project[] = [
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEZs969hmJsQRAXVWegvhSfDcFa0xOLGt4d79M",
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEpzuXBPrT7HJNFoIPOL8UME4xd0z5ZvwfnkuV"
     ],
+    icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, SiShadcnui, SiNestjs]
   },
   {
     type: "professional",
@@ -42,6 +48,7 @@ export const ProjectList: Project[] = [
       "https://utfs.io/f/7kE3rOCyK0iENmoH23jKyTaKtz1eb3Movcr7S0jfPBuL4A5U",
       "https://utfs.io/f/7kE3rOCyK0iEpcODfnMrT7HJNFoIPOL8UME4xd0z5Zvwfnku"
     ],
+    icons: [FaAngular, SiTypescript, SiPrimeng, SiMaterialdesign]
   },
   {
     type: "professional",
@@ -54,6 +61,7 @@ export const ProjectList: Project[] = [
       "https://utfs.io/f/7kE3rOCyK0iELcVdtsMdCqWwpOvfgBJyH2hzIij9EDaYbsrk",
       "https://utfs.io/f/7kE3rOCyK0iEEW50LpkxdDlrvhPKGVeFnRIX5jQ2BL849Msp"
     ],
+    icons: [FaAngular, SiTypescript, SiDotnet]
   },
   // PERSONAL PROJECTS
   
