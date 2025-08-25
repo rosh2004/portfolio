@@ -23,8 +23,8 @@ function ProjectsSection() {
           <CardDescription>{project.description}</CardDescription>
           { (project.icons && project.icons?.length > 0) && <IconBar icons={project.icons} />}
         </div>
-      <CardContent className="flex items-center xl:h-[400px] pb-2">
-        <Carousel className="w-full max-w-[220px] sm:max-w-sm md:max-w-lg mx-auto">
+      <CardContent className="flex flex-1 items-end xl:h-[400px] pb-2">
+        <Carousel className="w-10/12 max-w-[220px] sm:max-w-sm md:max-w-lg mx-auto">
           <CarouselContent>
             {project.images.map((image, index) => (
               <CarouselItem key={image} className="flex items-center">
