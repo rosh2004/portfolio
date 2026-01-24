@@ -1,5 +1,3 @@
-
-import ProjectsCarousel from "@/components/ProjectsCarousel"
 import SectionHeading from "@/components/ui/SectionHeading"
 import { ProjectList } from "../lib/project-data"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -7,8 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Image from "next/image";
 import Link from "next/link";
 import IconBar from "@/components/timeline/IconBar";
-// import { Button } from "@/components/ui/button";
-// import { FaArrowRight } from "react-icons/fa";
+import { FaCode, FaExternalLinkAlt } from "react-icons/fa";
 
 function ProjectsSection() {
   const personalProjectList = ProjectList.filter(project => project.type === 'personal');
@@ -42,11 +39,62 @@ function ProjectsSection() {
       </CardContent>
     </Card>
   ))
+
+  const renderedPersonalProjects = personalProjectList.map((project, index) => (
+    <Card
+      key={index}
+      className="group flex flex-col overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1"
+    >
+      <CardContent className="relative p-0 overflow-hidden">
+        <div className="relative aspect-[4/3] w-full overflow-hidden">
+          <Link href={project.images[0] ?? ''} target="_blank">
+            <Image
+              src={project.images[0]}
+              alt={project.title}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </Link>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
+        <div className="absolute bottom-0 inset-x-0 flex justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <div className="w-full flex">
+            {project.sourceCodeLink && (
+              <Link
+                href={project.sourceCodeLink}
+                target="_blank"
+                className={`flex justify-center items-center gap-2 flex-1 h-12 text-white bg-black/90 hover:bg-primary transition-colors duration-200 ${project.projectLink ? 'border-r border-white/20' : ''}`}
+              >
+                <FaCode className="w-4 h-4" />
+                <span className="text-sm font-medium">Code</span>
+              </Link>
+            )}
+            {project.projectLink && (
+              <Link
+                href={project.projectLink}
+                target="_blank"
+                className="flex justify-center items-center gap-2 flex-1 h-12 text-white bg-black/90 hover:bg-primary transition-colors duration-200"
+              >
+                <FaExternalLinkAlt className="w-4 h-4" />
+                <span className="text-sm font-medium">Live</span>
+              </Link>
+            )}
+          </div>
+        </div>
+      </CardContent>
+      <CardHeader className="flex-1 flex flex-col gap-2 pt-4">
+        <CardTitle className="text-lg leading-tight line-clamp-2">{project.title}</CardTitle>
+        <CardDescription className="flex-grow text-sm line-clamp-3">{project.description}</CardDescription>
+      </CardHeader>
+    </Card>
+  ))
+
   return (
     <div>
       <article>
         <SectionHeading>Projects</SectionHeading>
-        {professionalProjectList.length > 0 && 
+        {professionalProjectList.length > 0 &&
           <>
             <h3 className='text-3xl md:text-5xl font-medium mb-1'>Professional</h3>
 
@@ -55,17 +103,14 @@ function ProjectsSection() {
             </div>
           </>
         }
-        {personalProjectList.length > 0 && 
+        {personalProjectList.length > 0 &&
           <>
-            <h3 className='text-3xl md:text-5xl font-medium mb-1'>Personal</h3>
-            <div className="flex justify-center mx-auto p-6">
-              <ProjectsCarousel projectList={personalProjectList}></ProjectsCarousel>
+            <h3 className='text-3xl md:text-5xl font-medium mb-4 mt-8'>Personal</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-2 sm:p-8">
+              {renderedPersonalProjects}
             </div>
           </>
         }
-        {/* <div className="flex justify-center">
-          <Button className="text-xl py-6 w-[280px] bg-gradient-to-r from-primary to-secondary hover:from-accent hover:to-secondary text-foreground-light dark:text-foreground-light">See More <FaArrowRight /></Button>
-        </div> */}
       </article>
     </div>
   )
