@@ -1,4 +1,3 @@
-import CallToAction from "./CallToAction"
 import MainLogo from "./MainLogo"
 import NavbarLink from "./NavbarLink"
 import Link from "next/link"

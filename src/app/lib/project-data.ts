@@ -1,7 +1,6 @@
 import { FaAngular, FaReact } from "react-icons/fa";
 import { Project } from "../../../types";
-import { SiDotnet, SiMaterialdesign, SiNestjs, SiPrimeng, SiShadcnui, SiSqlite, SiSupabase, SiTypescript } from "react-icons/si";
-import { BsBootstrapFill } from "react-icons/bs";
+import { SiDotnet, SiMaterialdesign, SiNestjs, SiNgrx, SiPrimeng, SiShadcnui, SiSupabase, SiTypescript } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export const ProjectList: Project[] = [
@@ -9,7 +8,7 @@ export const ProjectList: Project[] = [
   {
     type: "professional",
     title: "Jayu Merchant Portal - B2B",
-    description: "Led the front-end in an Angular 16 project using PrimeNG, Bootstrap, Reactive Forms, RxJS, and NgRX, delivering 20+ pixel-perfect, responsive pages from Figma designs. Built shared components, followed strict TypeScript practices, and ensured quality with thorough unit testing.",
+    description: "Led the entire frontend development for a B2B Merchant Loyalty Platform with 2,013 hours total across two phases. Migrated Angular 16 to 20, PrimeNG 16 to 20, and PrimeFlex to TailwindCSS. Built 50+ custom components and 30+ pixel-perfect, responsive pages from Figma designs. Implemented complex reactive forms with JSON tree parsing and 100+ conditional triggers using RxJS and NgRx.",
     images: [
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iETfqecrXY6Ex5y02adPDIg9QbhUVfAwemtClL",
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iENmr8A7UKyTaKtz1eb3Movcr7S0jfPBuL4A5U",
@@ -24,7 +23,7 @@ export const ProjectList: Project[] = [
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEndHNpG1cI65hHWwZ4DJiMQVqyv9lm8kEdsO7",
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEFGDosMTxT0d5NfWZtuyOKr4GA3i8BcneYXsw",
     ],
-    icons: [FaAngular, SiTypescript, SiPrimeng, BsBootstrapFill],
+    icons: [FaAngular, SiTypescript, SiPrimeng, RiTailwindCssFill, SiNgrx],
   },
   {
     type: "professional",

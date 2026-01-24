@@ -15,8 +15,8 @@ type TimelineStep = {
   to: string;
   company: {
     name: string;
-    url: string;
-    linkedin: string;
+    url?: string;
+    linkedin?: string;
   };
   title: string;
   description: string;
