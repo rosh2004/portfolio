@@ -1,18 +1,16 @@
 # Portfolio Project
 
-Next.js 15 personal portfolio site deployed on Vercel.
+Next.js 15 portfolio site on Vercel.
 
 ## Commands
 
 ```bash
-npm run dev      # Start dev server (localhost:3000)
+npm run dev      # Dev server (localhost:3000)
 npm run build    # Production build
 npm run lint     # ESLint
 ```
 
-## Content Data Files
-
-Update these files for content changes:
+## Content Files
 
 | Content | File |
 |---------|------|
@@ -23,29 +21,24 @@ Update these files for content changes:
 
 ## Code Style
 
-- Tailwind CSS for styling (no CSS modules)
+- Tailwind CSS only (no CSS modules)
 - shadcn/ui components in `src/components/ui/`
-- React Icons for icon components
-- External image hosting on utfs.io for project screenshots
+- React Icons for icons
+- Images hosted on utfs.io
 
-## Project Structure
+## Key Paths
 
-```
-src/app/lib/           # Data constants (projects, work experience)
-src/app/(sections)/    # Page sections (Home, Projects, Work, Education)
-src/components/ui/     # shadcn/ui base components
-src/components/        # Custom components
-public/images/         # Local images
-public/pdfs/           # Resume PDF
-```
+- `src/app/lib/` - Data constants
+- `src/app/(sections)/` - Page sections
+- `src/components/` - Custom components
+- `types.d.ts` - Type definitions
 
-## Environment Variables
+## Environment
 
-Social links configured in `.env`:
-- `LINKEDIN_HREF`, `GITHUB_HREF`, `EMAIL_HREF`, `PHONE_HREF`
+Social links in `.env`: `LINKEDIN_HREF`, `GITHUB_HREF`, `EMAIL_HREF`, `PHONE_HREF`
 
-Contact form uses Resend API with `RESEND_API_KEY`.
+Contact form: `RESEND_API_KEY`
 
-## Types
+## Rules
 
-Type definitions in `/types.d.ts` for `Project`, `TimelineStep`, `TimeSubStep`.
+See `.claude/rules/` for detailed docs on content structure and UI components.
