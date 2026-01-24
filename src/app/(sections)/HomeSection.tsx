@@ -19,7 +19,7 @@ function HomeSection() {
           <TechStacksRow className='mt-6' />
         </div>
         <div className='flex justify-center w-[300px] md:min-w-[300px] mb-4 lg:my-6'>
-          <Image src="/images/self-portrait.jpg" alt="Roshaan Siddiqui's Profile Photo" 
+          <Image src="/images/self-portrait.jpg" alt="Roshaan Siddiqui's Profile Photo"
             width={500} height={500} className='rounded-full border-8 border-primary mb-4 mt-6 md:my-0 '
           />
         </div>
