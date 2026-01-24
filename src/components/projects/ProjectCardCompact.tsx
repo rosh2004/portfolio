@@ -54,29 +54,34 @@ export function ProjectCardCompact({ project, isSelected, onClick }: ProjectCard
         )}
 
         {/* Action Buttons */}
-        <div className="flex items-center gap-1.5 pt-1 flex-wrap">
-          <div onClick={(e) => e.stopPropagation()} className="flex gap-1.5">
-            {projectLink && (
-              <Button variant="outline" size="sm" className="h-7 text-xs px-2" asChild>
-                <Link href={projectLink} target="_blank">
-                  <FaEye className="w-3 h-3 mr-1" />
-                  View
-                </Link>
-              </Button>
-            )}
-            {sourceCodeLink && (
-              <Button variant="outline" size="sm" className="h-7 text-xs px-2" asChild>
-                <Link href={sourceCodeLink} target="_blank">
-                  <FaCode className="w-3 h-3 mr-1" />
-                  GitHub
-                </Link>
-              </Button>
-            )}
-          </div>
+        <div className="space-y-2 pt-1">
+          {/* View / GitHub row */}
+          {(projectLink || sourceCodeLink) && (
+            <div className="flex gap-1.5" onClick={(e) => e.stopPropagation()}>
+              {projectLink && (
+                <Button variant="outline" size="sm" className="h-7 text-xs flex-1" asChild>
+                  <Link href={projectLink} target="_blank">
+                    <FaEye className="w-3 h-3 mr-1" />
+                    View
+                  </Link>
+                </Button>
+              )}
+              {sourceCodeLink && (
+                <Button variant="outline" size="sm" className="h-7 text-xs flex-1" asChild>
+                  <Link href={sourceCodeLink} target="_blank">
+                    <FaCode className="w-3 h-3 mr-1" />
+                    GitHub
+                  </Link>
+                </Button>
+              )}
+            </div>
+          )}
+
+          {/* Expand button row */}
           <Button
             variant={isSelected ? "default" : "secondary"}
             size="sm"
-            className="h-7 text-xs px-2 ml-auto"
+            className="h-7 text-xs w-full"
             onClick={onClick}
           >
             <FaExpand className="w-3 h-3 mr-1" />

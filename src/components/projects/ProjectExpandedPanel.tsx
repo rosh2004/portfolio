@@ -5,7 +5,7 @@ import { Project } from '../../../types'
 import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
 import AgoraGallery from './AgoraGallery'
-import { FaCode, FaEye, FaTimes } from 'react-icons/fa'
+import { FaCode, FaExternalLinkAlt, FaTimes } from 'react-icons/fa'
 
 interface ProjectExpandedPanelProps {
   project: Project
@@ -13,80 +13,126 @@ interface ProjectExpandedPanelProps {
 }
 
 export function ProjectExpandedPanel({ project, onClose }: ProjectExpandedPanelProps) {
-  const { title, description, images, icons, projectLink, sourceCodeLink } = project
+  const { type, title, description, images, icons, projectLink, sourceCodeLink } = project
 
   return (
     <div
       className="
-        col-span-full my-4 bg-sectionBg dark:bg-sectionBg
-        border border-primary/20 rounded-xl overflow-hidden
+        col-span-full my-6
+        bg-gradient-to-br from-sectionBg via-sectionBg to-primary/5
+        dark:from-sectionBg dark:via-sectionBg dark:to-primary/10
+        border border-primary/20 rounded-2xl overflow-hidden
+        shadow-xl shadow-primary/5
         animate-in slide-in-from-top-4 fade-in duration-300
       "
     >
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6 p-6">
+      {/* Close button - top right corner */}
+      <div className="flex justify-end p-4 pb-0">
+        <button
+          onClick={onClose}
+          className="
+            w-10 h-10 flex items-center justify-center
+            rounded-full bg-foreground/5 hover:bg-foreground/10
+            text-foreground/60 hover:text-foreground
+            transition-all duration-200 hover:scale-110 active:scale-95
+          "
+          aria-label="Close panel"
+        >
+          <FaTimes className="w-4 h-4" />
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-6 pt-2">
         {/* Left: Image Gallery */}
-        <div className="lg:col-span-3">
+        <div className="lg:col-span-1">
           {images.length > 0 ? (
-            <AgoraGallery images={images} alt={title} />
+            <div className="rounded-xl overflow-hidden bg-black/5 dark:bg-black/20">
+              <AgoraGallery images={images} alt={title} />
+            </div>
           ) : (
-            <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
-              <span className="text-muted-foreground">No images</span>
+            <div className="aspect-video bg-muted rounded-xl flex items-center justify-center">
+              <span className="text-muted-foreground">No images available</span>
             </div>
           )}
         </div>
 
         {/* Right: Details */}
-        <div className="lg:col-span-2 flex flex-col">
-          {/* Header with close button */}
-          <div className="flex items-start justify-between gap-4 mb-4">
-            <h3 className="text-xl font-semibold text-foreground">{title}</h3>
-            <Button
-              variant="ghost"
-              size="sm"
-              className="h-8 w-8 p-0 shrink-0"
-              onClick={onClose}
+        <div className="lg:col-span-1 flex flex-col">
+          {/* Type Badge */}
+          <div className="mb-3">
+            <Badge
+              className={`
+                px-3 py-1 text-xs font-semibold uppercase tracking-wider
+                ${type === 'professional'
+                  ? 'bg-primary/15 text-primary border-primary/30'
+                  : 'bg-secondary/15 text-secondary border-secondary/30'
+                }
+              `}
+              variant="outline"
             >
-              <FaTimes className="w-4 h-4" />
-              <span className="sr-only">Close</span>
-            </Button>
+              {type}
+            </Badge>
           </div>
 
+          {/* Title */}
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4 leading-tight">
+            {title}
+          </h3>
+
           {/* Description */}
-          <p className="text-sm text-foreground/70 leading-relaxed mb-4 flex-grow">
+          <p className="text-base text-foreground/70 leading-relaxed mb-6 flex-grow">
             {description}
           </p>
 
-          {/* Tech Stack Badges */}
+          {/* Tech Stack */}
           {icons && icons.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-4">
-              {icons.map((Icon, idx) => (
-                <Badge
-                  key={idx}
-                  variant="outline"
-                  className="flex items-center gap-1.5 border-primary/50 text-foreground/80"
-                >
-                  <Icon className="w-3.5 h-3.5" />
-                </Badge>
-              ))}
+            <div className="mb-6">
+              <h4 className="text-xs uppercase tracking-wider text-foreground/50 mb-3 font-medium">
+                Tech Stack
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {icons.map((Icon, idx) => (
+                  <div
+                    key={idx}
+                    className="
+                      w-10 h-10 flex items-center justify-center
+                      rounded-lg bg-primary/10 dark:bg-primary/20
+                      text-primary
+                      transition-transform duration-200 hover:scale-110
+                    "
+                  >
+                    <Icon className="w-5 h-5" />
+                  </div>
+                ))}
+              </div>
             </div>
           )}
 
           {/* Action Buttons */}
           {(projectLink || sourceCodeLink) && (
-            <div className="flex flex-wrap gap-3 pt-2">
+            <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-foreground/10">
               {projectLink && (
-                <Button variant="default" size="sm" asChild>
+                <Button
+                  size="lg"
+                  className="flex-1 h-12 text-base font-medium gap-2"
+                  asChild
+                >
                   <Link href={projectLink} target="_blank">
-                    <FaEye className="w-4 h-4 mr-2" />
-                    View Live
+                    <FaExternalLinkAlt className="w-4 h-4" />
+                    View Live Project
                   </Link>
                 </Button>
               )}
               {sourceCodeLink && (
-                <Button variant="outline" size="sm" asChild>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="flex-1 h-12 text-base font-medium gap-2 border-2"
+                  asChild
+                >
                   <Link href={sourceCodeLink} target="_blank">
-                    <FaCode className="w-4 h-4 mr-2" />
-                    Source Code
+                    <FaCode className="w-4 h-4" />
+                    View Source Code
                   </Link>
                 </Button>
               )}

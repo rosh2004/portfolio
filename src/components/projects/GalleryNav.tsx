@@ -44,16 +44,16 @@ function NavButton({ direction, onClick, disabled }: NavButtonProps) {
       disabled={disabled}
       aria-label={isPrev ? 'Previous image' : 'Next image'}
       className={`
-        hidden md:flex absolute top-1/2 -translate-y-1/2 z-20
-        ${isPrev ? 'left-4' : 'right-4'}
-        w-12 h-12 items-center justify-center
+        absolute top-1/2 -translate-y-1/2 z-20
+        ${isPrev ? 'left-2 md:left-4' : 'right-2 md:right-4'}
+        w-10 h-10 md:w-12 md:h-12 flex items-center justify-center
         rounded-full bg-black/50 backdrop-blur-md
-        text-white/90
-        transition-all duration-300
+        text-white/90 border border-white/20
+        transition-all duration-200
         focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2
         ${disabled
-          ? 'opacity-0 pointer-events-none'
-          : 'opacity-0 group-hover:opacity-100 hover:bg-black/70 hover:scale-110'
+          ? 'opacity-30 cursor-not-allowed'
+          : 'opacity-80 hover:opacity-100 hover:bg-black/70 hover:scale-110 active:scale-95'
         }
       `}
     >

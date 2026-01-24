@@ -25,9 +25,6 @@ export default function AgoraGallery({ images, alt = 'Project image' }: AgoraGal
 
   return (
     <div className="relative group">
-      {/* Gradient fade edges */}
-      <GalleryEdgeFades />
-
       {/* Scrollable gallery container */}
       <div
         ref={scrollRef}
@@ -50,14 +47,25 @@ export default function AgoraGallery({ images, alt = 'Project image' }: AgoraGal
         ))}
       </div>
 
-      {/* Dot indicators */}
-      <GalleryDots
-        total={images.length}
-        activeIndex={activeIndex}
-        onDotClick={scrollToIndex}
-      />
+      {/* Always visible image counter */}
+      {images.length > 1 && (
+        <div className="absolute top-4 right-4 z-20">
+          <span className="px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-sm text-white text-sm font-medium tabular-nums">
+            {activeIndex + 1} / {images.length}
+          </span>
+        </div>
+      )}
 
-      {/* Navigation arrows */}
+      {/* Dot indicators - always visible */}
+      {images.length > 1 && (
+        <GalleryDots
+          total={images.length}
+          activeIndex={activeIndex}
+          onDotClick={scrollToIndex}
+        />
+      )}
+
+      {/* Navigation arrows - always visible when multiple images */}
       {images.length > 1 && (
         <GalleryNav
           canScrollPrev={canScrollPrev}
@@ -67,26 +75,5 @@ export default function AgoraGallery({ images, alt = 'Project image' }: AgoraGal
         />
       )}
     </div>
-  )
-}
-
-function GalleryEdgeFades() {
-  return (
-    <>
-      <div
-        className="absolute left-0 top-0 bottom-0 w-12
-          bg-gradient-to-r from-background via-background/80 to-transparent
-          z-10 pointer-events-none
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        aria-hidden="true"
-      />
-      <div
-        className="absolute right-0 top-0 bottom-0 w-12
-          bg-gradient-to-l from-background via-background/80 to-transparent
-          z-10 pointer-events-none
-          opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        aria-hidden="true"
-      />
-    </>
   )
 }
