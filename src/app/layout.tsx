@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en" className={`${roboto.variable} ${inter.variable}`}>
       <body className={`antialiased ${roboto.className} text-foreground bg-background`} suppressHydrationWarning={true}>
         <Navbar />
-        <div className="pt-20 md:pt-32">
+        <div className="pt-16 md:pt-24">
           {children}
         </div>
         <DownloadResumeButton />

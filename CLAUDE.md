@@ -23,8 +23,10 @@ npm run lint     # ESLint
 
 - Tailwind CSS only (no CSS modules)
 - shadcn/ui components in `src/components/ui/`
-- React Icons for icons
+- React Icons for icons - never create custom SVG icons
 - Images hosted on utfs.io
+- Separate logic into custom hooks, keep components presentational
+- Use barrel exports (`index.ts`) for component directories
 
 ## Key Paths
 

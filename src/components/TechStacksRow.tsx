@@ -1,54 +1,58 @@
-import React from 'react'
 import { Badge } from './ui/badge'
 
 type Props = {
   className?: string
 }
 
-function TechStacksRow({className}: Props) {
-
-  const techStacks = [
-    'Angular2+',
-    'PrimeNG',
-    'NgRx',
-    'RxJS',
-    'React',
-    'Next.js',
-    'ShadCN',
-    'TypeScript',
-    'TailwindCSS',
-    'Javascript',
-    'Node.js',
-    'NestJS',
-    'Supabase',
-    'MongoDB',
-    'PostgreSQL',
-    'MSSQL',
-    'GraphQL',
-    'Docker',
-    'Vercel',
-    'Claude Code',
-    'Cursor',
-    'Kendo UI',
-    'Material UI',
-    'Sass',
-    'JEST',
-    'Jira',
-    'Confluence',
-    'Bitbucket',
-    'Github',
-    'Git',
-    'REST API',
-    'Agile',
+const TECH_CATEGORIES = {
+  "Frontend": [
+    "Angular", "React", "Next.js", "TypeScript", "Javascript",
+    "TailwindCSS", "PrimeNG", "Material UI", "Kendo UI", "ShadCN", "Sass",
+    "NgRx", "RxJS", "Redux", "React Query"
+  ],
+  "Backend": [
+    "Node.js", "NestJS", "REST API", "GraphQL",
+    "Supabase", "MongoDB", "PostgreSQL", "MSSQL"
+  ],
+  "DevOps & Tools": [
+    "Docker", "Vercel", "Git", "Github", "Bitbucket",
+    "Jira", "Confluence", "JEST", "Agile",
+    "Claude Code", "Cursor",
   ]
+} as const
 
+function TechStacksRow({ className }: Props) {
   return (
-    <div className={`flex flex-wrap gap-2 ${className? className: ''}`}>
-      {
-        techStacks.map((tech) => (
-          <Badge variant='outline' className='text-foreground dark:text-foreground font-normal text-md border-2 border-primary dark:border-primary' key={tech}>{tech}</Badge>
-        ))
-      }
+    <div className={`flex flex-col gap-5 ${className ?? ''}`}>
+      {Object.entries(TECH_CATEGORIES).map(([category, techs]) => (
+        <TechCategory key={category} title={category} techs={techs} />
+      ))}
+    </div>
+  )
+}
+
+interface TechCategoryProps {
+  title: string
+  techs: readonly string[]
+}
+
+function TechCategory({ title, techs }: TechCategoryProps) {
+  return (
+    <div>
+      <h3 className="text-md uppercase tracking-wider text-foreground/60 mb-2 font-medium">
+        {title}
+      </h3>
+      <div className="flex flex-wrap gap-2">
+        {techs.map((tech) => (
+          <Badge
+            key={tech}
+            variant="outline"
+            className="text-foreground dark:text-foreground font-normal text-sm border border-primary dark:border-primary"
+          >
+            {tech}
+          </Badge>
+        ))}
+      </div>
     </div>
   )
 }
