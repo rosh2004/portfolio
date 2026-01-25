@@ -1,7 +1,7 @@
 import { FaAngular, FaReact } from "react-icons/fa";
 import { Project } from "../../../types";
-import { SiDotnet, SiMaterialdesign, SiNestjs, SiNgrx, SiPrimeng, SiShadcnui, SiSupabase, SiTypescript } from "react-icons/si";
-import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { SiApacheecharts, SiDotnet, SiMaterialdesign, SiNestjs, SiNgrx, SiPrimeng, SiShadcnui, SiSupabase, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { RiClaudeFill, RiNextjsFill, RiReactjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 export const ProjectList: Project[] = [
 
@@ -70,7 +70,8 @@ export const ProjectList: Project[] = [
     description: "A demonstration project using Apache ECharts with Angular and TailwindCSS to create highly customized charts. This project features a functioning chart UI for demonstration purposes.",
     images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEbJjFYIlpWNYo26U9x4ukD5icGnzTB7vXwOgZ'],
     projectLink: "https://chart-ui-angular.netlify.app/",
-    sourceCodeLink: "https://github.com/rosh2004/mobile-chart-ui"
+    sourceCodeLink: "https://github.com/rosh2004/mobile-chart-ui",
+    icons: [FaAngular, SiTypescript, SiApacheecharts]
   },
   {
     type: "personal",
@@ -78,7 +79,8 @@ export const ProjectList: Project[] = [
     description: "A demonstration project using Apache ECharts with Angular and TailwindCSS to showcase chart customized animations. This project features a functioning animated chart for demonstration purposes.",
     images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iETH025NXY6Ex5y02adPDIg9QbhUVfAwemtClL'],
     projectLink: "https://chart-mobile-animation.netlify.app/",
-    sourceCodeLink: "https://github.com/rosh2004/chart-mobile-animation"
+    sourceCodeLink: "https://github.com/rosh2004/chart-mobile-animation",
+    icons: [FaAngular, SiTypescript, SiApacheecharts]
   },
   {
     type: "personal",
@@ -87,6 +89,7 @@ export const ProjectList: Project[] = [
     images: ["https://utfs.io/f/7kE3rOCyK0iEKoo5eOSZIX3hjKMJaDYSoP79Gte6Zx5lu4qy"],
     projectLink: "https://roshaantech.com/",
     sourceCodeLink: "https://github.com/rosh2004/portfolio",
+    icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss, RiClaudeFill]
   },
   {
     type: "personal",
@@ -95,6 +98,7 @@ export const ProjectList: Project[] = [
     images: ["https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iELeoTqomMdCqWwpOvfgBJyH2hzIij9EDaYbsr"],
     projectLink: "https://blog.roshfire.com/",
     sourceCodeLink: "https://github.com/rosh2004/my-nextjs-remote-mdx-blog",
+    icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss]
   },
   
 ];

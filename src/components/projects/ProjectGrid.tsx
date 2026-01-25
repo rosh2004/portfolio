@@ -62,7 +62,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
         return (
           <div key={rowIndex}>
             {/* Row of cards */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4">
               {rowProjects.map((project, colIndex) => {
                 const projectIndex = rowStartIndex + colIndex
                 return (

@@ -12,7 +12,9 @@ function TimeSubStep({team}: Props) {
           {team.title}
         </h5>
         <p className="text-black/70 dark:text-white/70 text-sm">{team.description}</p>
-        <IconBar icons={team.icons} />
+        <div className="p-2">
+          <IconBar icons={team.icons} />
+        </div>
       </>
     )
 
