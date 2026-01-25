@@ -24,6 +24,7 @@ export const ProjectList: Project[] = [
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEFGDosMTxT0d5NfWZtuyOKr4GA3i8BcneYXsw",
     ],
     icons: [FaAngular, SiTypescript, SiPrimeng, RiTailwindCssFill, SiNgrx],
+    tech: ["Angular", "TypeScript", "PrimeNG", "TailwindCSS", "NgRx"],
   },
   {
     type: "professional",
@@ -35,32 +36,35 @@ export const ProjectList: Project[] = [
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEZs969hmJsQRAXVWegvhSfDcFa0xOLGt4d79M",
       "https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEpzuXBPrT7HJNFoIPOL8UME4xd0z5ZvwfnkuV"
     ],
-    icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, SiShadcnui, SiNestjs]
+    icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, SiShadcnui, SiNestjs],
+    tech: ["Next.js", "TailwindCSS", "TypeScript", "React", "Supabase", "shadcn/ui", "NestJS"],
   },
   {
     type: "professional",
     title: "Label Designer - HTML5 Canvas",
     description: "Developed a graphics designer tool for creating labels with barcodes, QR codes, and text using the Konva.js library. The tool was built over Angular 15 and Material UI. It had a dashboard where multiple users were able to create view and edit labels based on their role and the company they were reigsterd with as it was multi tenant program. Major feature was the label editor tool where Konva.JS was used to handle HTML5Canvas in order to make a canvas where items could be dragged, dropped, scaled, resize, rotated, aligned, grouped and updated. It was a new challange, I lead the decisions, developed plan and solved major strategies faced in this project",
     images: [
-      "https://utfs.io/f/7kE3rOCyK0iEzlqR0GDec5qRMFdXrIYktxJTl1ePN40ASCEy", 
+      "https://utfs.io/f/7kE3rOCyK0iEzlqR0GDec5qRMFdXrIYktxJTl1ePN40ASCEy",
       "https://utfs.io/f/7kE3rOCyK0iEjRf9UbEFMJBDrsxYytiRhXnULoKWEdq3vP1N",
       "https://utfs.io/f/7kE3rOCyK0iENmoH23jKyTaKtz1eb3Movcr7S0jfPBuL4A5U",
       "https://utfs.io/f/7kE3rOCyK0iEpcODfnMrT7HJNFoIPOL8UME4xd0z5Zvwfnku"
     ],
-    icons: [FaAngular, SiTypescript, SiPrimeng, SiMaterialdesign]
+    icons: [FaAngular, SiTypescript, SiPrimeng, SiMaterialdesign],
+    tech: ["Angular", "TypeScript", "PrimeNG", "Material UI"],
   },
   {
     type: "professional",
     title: "Product Supply Chain Tracking Solution",
     description: "Developed the frontend of a multi-tenant management portal using Angular 13 and Kendo UI, enabling customers to register programs, add items, and manage custom incidents and events. Designed dynamic grids with advanced filtering, customizable views, and CSV export, integrated with Google Maps to visualize real-time data clusters and lifecycle triggers. Solved complex challenges in tracking and visualizing large datasets, ensuring a responsive and intuitive UI while optimizing performance. Collaborated effectively with backend teams to deliver a seamless, data-driven experience.",
     images: [
-      "https://utfs.io/f/7kE3rOCyK0iEDY82ZR6pMci580DnAX6vZRtakez4hfyxouWY", 
+      "https://utfs.io/f/7kE3rOCyK0iEDY82ZR6pMci580DnAX6vZRtakez4hfyxouWY",
       "https://utfs.io/f/7kE3rOCyK0iEF1X5HsrTxT0d5NfWZtuyOKr4GA3i8BcneYXs",
       "https://utfs.io/f/7kE3rOCyK0iEF5YYwGTxT0d5NfWZtuyOKr4GA3i8BcneYXsw",
       "https://utfs.io/f/7kE3rOCyK0iELcVdtsMdCqWwpOvfgBJyH2hzIij9EDaYbsrk",
       "https://utfs.io/f/7kE3rOCyK0iEEW50LpkxdDlrvhPKGVeFnRIX5jQ2BL849Msp"
     ],
-    icons: [FaAngular, SiTypescript, SiDotnet]
+    icons: [FaAngular, SiTypescript, SiDotnet],
+    tech: ["Angular", "TypeScript", ".NET"],
   },
   // PERSONAL PROJECTS
   
@@ -71,7 +75,8 @@ export const ProjectList: Project[] = [
     images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEbJjFYIlpWNYo26U9x4ukD5icGnzTB7vXwOgZ'],
     projectLink: "https://chart-ui-angular.netlify.app/",
     sourceCodeLink: "https://github.com/rosh2004/mobile-chart-ui",
-    icons: [FaAngular, SiTypescript, SiApacheecharts]
+    icons: [FaAngular, SiTypescript, SiApacheecharts],
+    tech: ["Angular", "TypeScript", "ECharts"],
   },
   {
     type: "personal",
@@ -80,7 +85,8 @@ export const ProjectList: Project[] = [
     images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iETH025NXY6Ex5y02adPDIg9QbhUVfAwemtClL'],
     projectLink: "https://chart-mobile-animation.netlify.app/",
     sourceCodeLink: "https://github.com/rosh2004/chart-mobile-animation",
-    icons: [FaAngular, SiTypescript, SiApacheecharts]
+    icons: [FaAngular, SiTypescript, SiApacheecharts],
+    tech: ["Angular", "TypeScript", "ECharts"],
   },
   {
     type: "personal",
@@ -89,7 +95,8 @@ export const ProjectList: Project[] = [
     images: ["https://utfs.io/f/7kE3rOCyK0iEKoo5eOSZIX3hjKMJaDYSoP79Gte6Zx5lu4qy"],
     projectLink: "https://roshaantech.com/",
     sourceCodeLink: "https://github.com/rosh2004/portfolio",
-    icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss, RiClaudeFill]
+    icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss, RiClaudeFill],
+    tech: ["Next.js", "React", "TailwindCSS", "Claude AI"],
   },
   {
     type: "personal",
@@ -98,7 +105,8 @@ export const ProjectList: Project[] = [
     images: ["https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iELeoTqomMdCqWwpOvfgBJyH2hzIij9EDaYbsr"],
     projectLink: "https://blog.roshfire.com/",
     sourceCodeLink: "https://github.com/rosh2004/my-nextjs-remote-mdx-blog",
-    icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss]
+    icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss],
+    tech: ["Next.js", "React", "TailwindCSS"],
   },
   
 ];

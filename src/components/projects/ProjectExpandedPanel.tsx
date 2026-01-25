@@ -6,6 +6,7 @@ import { Button } from '../ui/button'
 import { Badge } from '../ui/badge'
 import AgoraGallery from './AgoraGallery'
 import { FaCode, FaExternalLinkAlt, FaTimes } from 'react-icons/fa'
+import { TechStackDisplay } from './TechStackDisplay'
 
 interface ProjectExpandedPanelProps {
   project: Project
@@ -13,7 +14,7 @@ interface ProjectExpandedPanelProps {
 }
 
 export function ProjectExpandedPanel({ project, onClose }: ProjectExpandedPanelProps) {
-  const { type, title, description, images, icons, projectLink, sourceCodeLink } = project
+  const { type, title, description, images, icons, tech, projectLink, sourceCodeLink } = project
 
   return (
     <div
@@ -85,26 +86,12 @@ export function ProjectExpandedPanel({ project, onClose }: ProjectExpandedPanelP
           </p>
 
           {/* Tech Stack */}
-          {icons && icons.length > 0 && (
+          {tech && tech.length > 0 && icons && icons.length > 0 && (
             <div className="mb-6">
               <h4 className="text-xs uppercase tracking-wider text-foreground/50 mb-3 font-medium">
                 Tech Stack
               </h4>
-              <div className="flex flex-wrap gap-2">
-                {icons.map((Icon, idx) => (
-                  <div
-                    key={idx}
-                    className="
-                      w-10 h-10 flex items-center justify-center
-                      rounded-lg bg-primary/10 dark:bg-primary/20
-                      text-primary
-                      transition-transform duration-200 hover:scale-110
-                    "
-                  >
-                    <Icon className="w-5 h-5" />
-                  </div>
-                ))}
-              </div>
+              <TechStackDisplay icons={icons} tech={tech} />
             </div>
           )}
 

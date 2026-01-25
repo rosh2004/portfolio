@@ -21,8 +21,8 @@ function TimeStep({step}: Props) {
       <p className="text-sm text-black/70 dark:text-white/70">{step.description}</p>
       {
         step.teams.map((team, teamIndex) => (
-          <div className="pb-2">
-            <TimeSubStep key={teamIndex} team={team}></TimeSubStep>
+          <div key={teamIndex} className="pb-2">
+            <TimeSubStep team={team}></TimeSubStep>
           </div>
         ))
       }

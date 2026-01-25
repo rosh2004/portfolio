@@ -8,6 +8,7 @@ type Project = {
   sourceCodeLink?: string;
   projectLink?: string;
   icons?: IconType[];
+  tech?: string[];
 }
 
 type TimelineStep = {
