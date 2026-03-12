@@ -1,8 +1,7 @@
 import { RiNextjsFill, RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
 import { TimelineSteps } from "../../../types";
 import { SiJest, SiNgrx, SiPrimeng, SiSupabase, SiTypescript } from "react-icons/si";
-import { FaAngular, FaDocker, FaReact } from "react-icons/fa";
-import { GrGraphQl } from "react-icons/gr";
+import { FaAngular, FaReact } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
 import { SiReactivex } from "react-icons/si";
 
@@ -38,11 +37,6 @@ export const WORK_EXPERIENCE_LIST: TimelineSteps = [
         title: "Awarded AI Team - Contract Management System",
         description: "Developed AI-assisted contract management platform using Next.js 14, NestJS, Supabase, and Vercel. Built features including Kanban boards, document editors, and PDF viewers.",
         icons: [RiNextjsFill, SiNestjs, SiSupabase, RiVercelFill, SiTypescript, FaReact],
-      },
-      {
-        title: "Research and Development - DevOps",
-        description: "Conducting research on new technologies and DevOps practices to integrate them into the company's infrastructure.",
-        icons: [RiNextjsFill, RiTailwindCssFill, SiTypescript, FaReact, SiSupabase, FaDocker, RiVercelFill, GrGraphQl],
       },
       {
         title: "Label Designer - HP NiceLabel Integration",

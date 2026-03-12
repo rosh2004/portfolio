@@ -67,27 +67,7 @@ export const ProjectList: Project[] = [
     tech: ["Angular", "TypeScript", ".NET"],
   },
   // PERSONAL PROJECTS
-  
-  {
-    type: "personal",
-    title: "Chart UI (Angular + ECharts)",
-    description: "A demonstration project using Apache ECharts with Angular and TailwindCSS to create highly customized charts. This project features a functioning chart UI for demonstration purposes.",
-    images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEbJjFYIlpWNYo26U9x4ukD5icGnzTB7vXwOgZ'],
-    projectLink: "https://chart-ui-angular.netlify.app/",
-    sourceCodeLink: "https://github.com/rosh2004/mobile-chart-ui",
-    icons: [FaAngular, SiTypescript, SiApacheecharts],
-    tech: ["Angular", "TypeScript", "ECharts"],
-  },
-  {
-    type: "personal",
-    title: "Chart Animations (Angular + ECharts)",
-    description: "A demonstration project using Apache ECharts with Angular and TailwindCSS to showcase chart customized animations. This project features a functioning animated chart for demonstration purposes.",
-    images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iETH025NXY6Ex5y02adPDIg9QbhUVfAwemtClL'],
-    projectLink: "https://chart-mobile-animation.netlify.app/",
-    sourceCodeLink: "https://github.com/rosh2004/chart-mobile-animation",
-    icons: [FaAngular, SiTypescript, SiApacheecharts],
-    tech: ["Angular", "TypeScript", "ECharts"],
-  },
+
   {
     type: "personal",
     title: "Personal Portfolio Website",
@@ -107,6 +87,26 @@ export const ProjectList: Project[] = [
     sourceCodeLink: "https://github.com/rosh2004/my-nextjs-remote-mdx-blog",
     icons: [RiNextjsFill, RiReactjsFill, SiTailwindcss],
     tech: ["Next.js", "React", "TailwindCSS"],
+  },
+  {
+    type: "personal",
+    title: "Chart UI (Angular + ECharts)",
+    description: "A demonstration project using Apache ECharts with Angular and TailwindCSS to create highly customized charts. This project features a functioning chart UI for demonstration purposes.",
+    images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iEbJjFYIlpWNYo26U9x4ukD5icGnzTB7vXwOgZ'],
+    projectLink: "https://chart-ui-angular.netlify.app/",
+    sourceCodeLink: "https://github.com/rosh2004/mobile-chart-ui",
+    icons: [FaAngular, SiTypescript, SiApacheecharts],
+    tech: ["Angular", "TypeScript", "ECharts"],
+  },
+  {
+    type: "personal",
+    title: "Chart Animations (Angular + ECharts)",
+    description: "A demonstration project using Apache ECharts with Angular and TailwindCSS to showcase chart customized animations. This project features a functioning animated chart for demonstration purposes.",
+    images: ['https://2ddyvmtgjt.ufs.sh/f/7kE3rOCyK0iETH025NXY6Ex5y02adPDIg9QbhUVfAwemtClL'],
+    projectLink: "https://chart-mobile-animation.netlify.app/",
+    sourceCodeLink: "https://github.com/rosh2004/chart-mobile-animation",
+    icons: [FaAngular, SiTypescript, SiApacheecharts],
+    tech: ["Angular", "TypeScript", "ECharts"],
   },
   
 ];

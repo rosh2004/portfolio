@@ -8,13 +8,13 @@ function HomeSection() {
       <div className='flex flex-col-reverse lg:flex-row lg:justify-between items-center'>
         <div className='lg:pr-14 '>
           <h1 className='lg:text-7xl md:text-5xl text-4xl font-medium mb-1'>Hi, I&apos;m <span className='text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary'>Roshaan Siddiqui!</span></h1>
-          <h2 className='lg:text-4xl md:text-3xl text-2xl font-medium opacity-60 '>Full Stack Web Developer</h2>
+          <h2 className='lg:text-4xl md:text-3xl text-2xl font-medium opacity-60 '>Senior Full-Stack Developer</h2>
           <p className='dark:text-white/70 mt-6 leading-5 md:text-lg '>
             I&apos;m a <Strong>Senior Full-Stack Developer</Strong> with a frontend focus, passionate about creating modern, <Strong>Responsive Websites</Strong> and <Strong>Web Applications</Strong>.
             I have <Strong><span className='text-xl md:text-2xl'>5 years</span></Strong> of professional experience delivering enterprise-grade solutions.
-            On Upwork, I&apos;ve completed <Strong>2,000+ hours</Strong>, earned <Strong>$32K+</Strong>, and maintained <Strong>100% Job Success</Strong>.
+            On Upwork, I&apos;ve completed <Strong>2,000+ hours</Strong> and maintained <Strong>100% Job Success</Strong>.
             I specialize in <Strong>Angular</Strong> (expert/primary), <Strong>React</Strong>, and <Strong>Next.js</Strong>, building scalable full-stack applications with modern technologies.
-            I&apos;m always eager to learn new things and take on new challenges.
+            I take ownership of complex problems end-to-end, from architecture decisions to deployment.
           </p>
           <TechStacksRow className='mt-6' />
         </div>
