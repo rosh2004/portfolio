@@ -5,11 +5,9 @@ import Link from "next/link"
 function Navbar() {
 
   const links = [
-    { href: '/', title: 'Home' },
-    { href: '/blogs', title: 'Blogs' },
+    { href: 'https://blog.roshaantech.com', title: 'Blogs' },
   ];
   const renderedLinks = links.map((link, index) => {
-    return null;
     return (
       <Link key={index} href={link.href}>
         <NavbarLink  href={link.href} title={link.title} />
@@ -26,7 +24,7 @@ function Navbar() {
         <Link href='/' className="flex items-center">
           <MainLogo className="sm:h-10 h-9" height={'100%'}/>
         </Link>
-        <div className="hidden sm:flex justify-center items-center">
+        <div className="justify-center items-center">
           {renderedLinks}
         </div>
       </nav>

@@ -12,7 +12,7 @@ type Props = {
 function NavbarLink({href, title}: Props) {
   const pathname = usePathname()
   return (
-    <div className={`text-xl rounded-md px-4 ${href === pathname ? 'opacity-50' : ''}`}>{title}</div>
+    <div className={`text-2xl rounded-md px-4 ${href === pathname ? 'opacity-50' : ''}`}>{title}</div>
   )
 }
 
