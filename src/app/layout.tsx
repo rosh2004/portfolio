@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Inter, Roboto } from "next/font/google";
 import Navbar from "../components/Navbar";
 import DownloadResumeButton from "@/components/DownloadResumeButton";
+import { PostHogProvider } from "./providers";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,13 +38,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${roboto.variable} ${inter.variable}`}>
       <body className={`antialiased ${roboto.className} text-foreground bg-background`} suppressHydrationWarning={true}>
-        <Navbar />
-        <div className="pt-16 md:pt-24">
-          {children}
-        </div>
-        <DownloadResumeButton />
-        <Analytics />
-        <SpeedInsights />
+        <PostHogProvider>
+          <Navbar />
+          <div className="pt-16 md:pt-24">
+            {children}
+          </div>
+          <DownloadResumeButton />
+          <Analytics />
+          <SpeedInsights />
+        </PostHogProvider>
       </body>
     </html>
   );

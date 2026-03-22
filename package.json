@@ -19,6 +19,8 @@
     "embla-carousel-react": "^8.5.1",
     "lucide-react": "^0.468.0",
     "next": "15.4.10",
+    "posthog-js": "^1.363.1",
+    "posthog-node": "^5.28.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-icons": "^5.4.0",
