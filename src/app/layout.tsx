@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { Inter, Roboto } from "next/font/google";
 import Navbar from "../components/Navbar";
 import DownloadResumeButton from "@/components/DownloadResumeButton";
@@ -48,6 +49,9 @@ export default function RootLayout({
           <SpeedInsights />
         </PostHogProvider>
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   );
 }
