@@ -1,11 +1,12 @@
 import MainLogo from "./MainLogo"
 import NavbarLink from "./NavbarLink"
 import Link from "next/link"
+import { BLOG_URL } from "@/app/lib/constants"
 
 function Navbar() {
 
   const links = [
-    { href: 'https://blog.roshaantech.com', title: 'Blogs' },
+    { href: BLOG_URL, title: 'Blogs' },
   ];
   const renderedLinks = links.map((link, index) => {
     return (
